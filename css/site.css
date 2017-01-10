@@ -148,6 +148,13 @@ tr:nth-child(even) {
 	background: #ddd;
 }
 
+/* pre blocks already have a margin: avoid adding extra left/right margins
+   to highlighted blocks */
+figure {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 pre, code, tt {
 	font-family: 'Source Code Pro', monospace;
 }
@@ -185,3 +192,5 @@ dt {
 .sourceref {
 	font-size: 80%;
 }
+
+
