@@ -1,0 +1,4 @@
+coursename: "CS 101"
+baseurl: "/progsnap-spec"
+markdown: kramdown
+highlighter: rouge
