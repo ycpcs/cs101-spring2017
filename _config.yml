@@ -1,4 +1,4 @@
 coursename: "CS 101"
-baseurl: "/progsnap-spec"
+baseurl: "/cs101-spring2017"
 markdown: kramdown
 highlighter: rouge
