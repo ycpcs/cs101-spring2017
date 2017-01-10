@@ -95,7 +95,7 @@ a.cc-img {
 
 html {
 	min-height: 100%;
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Georgia', serif;
 }
 
 html, body {
@@ -156,7 +156,7 @@ figure {
 }
 
 pre, code, tt {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Andale Mono', monospace;
 }
 
 pre {
