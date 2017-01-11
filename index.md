@@ -18,7 +18,8 @@ All information about the course will be posted here.
 * [Resources](resources.html)
 * [Tutoring](tutoring.html)
 * [Submitting labs and assignments](submitting.html)
-* [Reference card (PDF)](refcard.pdf)
+* [Reference card \[PDF\]](refcard.pdf)
+* [Design template \[PDF\]](design-template.pdf)
 * [Practice exams](practice/index.html)
 
 ## News
