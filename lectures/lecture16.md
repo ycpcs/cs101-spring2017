@@ -1,144 +1,155 @@
 ---
 layout: default
-title: "Lecture 16: Using structs with functions"
+title: "Lecture 16: Struct Types"
 ---
 
-Using Struct Types with Functions
-=================================
+*Struct types* allow us to define new data types in our programs. We can use functions to define *operations* on struct types, leading to an extremely powerful programming technique called *encapsulation*.
 
-Struct types are data types (the same way that **int**, **double**, and the other built-in types are data types). They can be used with functions in the same way as the built-in types, both as parameter types (to send information to a function) and as a return type (to return information from a function.)
+Motivation for defining new data types
+======================================
 
-The following struct type will be used in the examples below:
+Let's say we're writing a program that is going to work with two-dimensional geometrical data. One important kind of data the program will manipulate is *points*. A point is two values:
+
+1.  an x-coordinate
+2.  a y-coordinate
+
+One way to represent a point is as two variables. For example, let's say that we have a point representing a starting location. We could define variables to represent the point as follows:
 
 {% highlight cpp %}
-struct Complex {
-    double real;
-    double imag;
+double startX;
+double startY;
+{% endhighlight %}
+
+This point representation works, but it's awkward. Each point represented in our program is represented by two variables. Let's say we extend the program to work with three-dimensional data. Now we need **three** variables for each point, e.g.:
+
+{% highlight cpp %}
+double startX;
+double startY;
+double startZ;
+{% endhighlight %}
+
+Another way in which we can see the awkwardness of using multiple variables to represent a point is when we write functions to perform operations on points. For example, we might want to write a function to compute the geometric distance between two points. For two-dimensional points, this function would require four parameters, two for each point:
+
+{% highlight cpp %}
+double geometricDistance(double point1X, double point1Y, double point2X, double point2Y)
+{
+    double xDist = point1X - point2X;
+    double yDist = point1Y - point2Y;
+    return sqrt((xDist * xDist) + (yDist * yDist));
+}
+{% endhighlight %}
+
+If we change the program to support three-dimensional data, now this function needs **six** parameters. Blech!
+
+Struct types
+============
+
+A *struct type* defines a new data type as some number of *fields*.
+
+For example, we could define a struct type for two-dimensional points as follows:
+
+{% highlight cpp %}
+struct Point {
+    double x;
+    double y;
 };
 {% endhighlight %}
 
-An instance of the **Complex** type represents a complex number. The field **real** represents the magnitude of the real part of the complex number, and the field **imag** represents the magnitude of the imaginary part.
+The **Point** struct type has two fields:
 
-Struct Return Value
-===================
+-   a **double** field named **x**
+-   a **double** field named **y**
 
-A function can return a struct instance. For example, we could create a function to return a **Complex** value with specified real and imaginary field values:
+That means that each *instance* of the **Point** type has two values, **x** and **y**, both of which are **double**s. A definition of a struct type is a "template" that specifies what data is contained in instances (variables) of the type.
+
+Struct instances
+================
+
+Once you have defined a struct type in a program, it can be used to declare instances of the type. E.g.:
 
 {% highlight cpp %}
-struct Complex makeComplex(double realValue, double imagValue) {
-    struct Complex result;
-    result.real = realValue;
-    result.imag = imagValue;
-    return result;
-}
+struct Point start;
 {% endhighlight %}
 
-We can call this function as follows:
+This declaration defines the variable **start** as an *instance* of the **Point** data type.
+
+You can think of variables that have struct types as "bundles" of variables glued together. Each field defined in the struct type becomes a variable in each instance of the struct type.
+
+It is helpful to visualize struct instances as boxes containing "nested" boxes representing fields: e.g.,
+
+> ![image](images/structBox.png)
+
+Accessing fields
+----------------
+
+The field variables located within each struct instance can be accessed using the *member selection operator*, denoted by a period ("**.**").
+
+For example, we could use the following code to initialize the **start** instance declared above, storing values in each of its fields:
 
 {% highlight cpp %}
-struct Complex origin;
-origin = makeComplex(0.0, 0.0);
-printf("real=%.1lf, imag=%.1lf\n", origin.real, origin.imag);
+// set start point to x=3.8, y=4.62
+start.x = 3.8;
+start.y = 4.62;
 {% endhighlight %}
 
-The code above would print the following output:
+After this code executes, we can visualize the **start** instance like this:
 
-    real=0.0, imag=0.0
+> ![image](images/structBoxFilledIn.png)
 
-Struct Parameters
-=================
+Its **x** and **y** fields have now been set to the values 3.8 and 4.62, respectively.
 
-Structs, by default are *passed-by-value* (similar to **int**, **double**, etc.) which means that when we pass a struct to a function, a *copy* is made of all its fields into the local parameter variable. This mechanism also means that a struct may be returned from a function and assigned to a similar type variable in the calling routine. Thus in this style of programming,
-
-> -   functions which perform operations on struct instances take them as *by-value* parameters
->
-> -   functions which need to create or "transform" a struct instance do so by returning a struct instance *by-value*
-
-Because passing and returning struct instances by value involves *copying* the data (including array fields) of each struct instances passed to or returned from each function, this style is most appropriate when the struct types have a small number of fields and do not contain array fields which might contain a large number of values.
-
-**For example**: complex numbers
-
-A complex number has the form
-
-> *a* + *bi*
-
-where *i* is the *imaginary unit*, such that
-
-> *i*<sup>2</sup> = (-*i*)<sup>2</sup> = -1
-
-and *a* and *b* are real numbers which represent the magnitudes of the real and imaginary parts of the complex number, respectively.
-
-Complex numbers are useful in a number of situations. For example, the roots of a quadratic equation may be complex. For example, the equation
-
-> *x*<sup>2</sup> - 10*x* + 34
-
-has the complex roots
-
-> *x* = 5 + 3*i*
-
-and
-
-> *x* = 5 - 3*i*
-
-[Example taken from [regentsprep.org](http://regentsprep.org/Regents/mathb/e/quadcomlesson.htm).]
-
-**Operations**
-
-What will make this a useful data type to use in programs are functions to perform operations on instances of the **Complex** type.
-
-For example,
-
-> -   constructing complex number from real and imaginary magnitudes
->
-> -   adding complex numbers
->
-> -   subtracting complex numbers
->
-> -   multiplying complex numbers
->
-> -   dividing complex numbers
-
-We might specify functions to perform these operations as follows:
+The member selection operator can also be used to retrieve the value of a field inside a struct instance. For example, we could print the contents of the **start** instance:
 
 {% highlight cpp %}
-struct Complex makeComplex(double real, double imag);
-struct Complex addComplex(struct Complex left, struct Complex right);
-struct Complex subtractComplex(struct Complex left, struct Complex right);
-struct Complex mulitplyComplex(struct Complex left, struct Complex right);
-struct Complex divideComplex(struct Complex left, struct Complex right);
+printf("start: x=%lf, y=%lf\n", start.x, start.y);
 {% endhighlight %}
 
-Note: these are just the prototypes, we would also need to write a definition of each function which performs the appropriate computation.
+Struct types + functions = encapsulation
+========================================
 
-For example, we might define the **makeComplex** function as follows:
+The real power of struct types becomes apparent when they are used in conjunction with functions. The idea is that we can write functions to perform *operations* - i.e., computations - on instances of struct types.
+
+For example, the function to compute the geometric distance between two points could be defined as:
 
 {% highlight cpp %}
-struct Complex makeComplex(double real, double imag)
+double geometricDistance(struct Point point1, struct Point point2)
 {
-    struct Complex result;
-
-    result.real = real;
-    result.complex = imag;
-
-    return result;
+    double xDist = point1.x - point2.x;
+    double yDist = point1.y - point2.y;
+    return sqrt((xDist * xDist) + (yDist * yDist));
 }
 {% endhighlight %}
 
-This function is useful because it allows us to "construct" an instance of **Complex** value from the magnitudes of the real and imaginary components.
-
-*Using the operations*
-
-Given the operations (functions) defined above, the following code would compute the product of the complex numbers
-
-(3 + 4*i*)(-5 + 2*i*)
+Using struct types and functions together in this way is called *encapsulation*, because the struct type and the functions that operate on its instances "encapsulate" a concept that is important in the program. Together, the struct type and its operations (functions) make your programs more expressive and easier to understand because both data and operations on data are given meaningful names. E.g., when we see the code
 
 {% highlight cpp %}
-struct Complex first, second;
-
-first = makeComplex(3, 4);
-second = makeComplex(-5, 2);
-
-struct Complex product;
-
-product = multiplyComplex(first, second);
+struct Point start;
 {% endhighlight %}
+
+it is clear that **start** is a point. Likewise, when we see the code
+
+{% highlight cpp %}
+struct Point start, end;
+
+...
+
+double tripDistance = geometricDistance(start, end);
+{% endhighlight %}
+
+it is clear that the distance between two points called **start** and **end** is being computed.
+
+Encapsulation makes the program easier to understand and change
+---------------------------------------------------------------
+
+Let's say that we've written a program to do computations on two-dimensional points using a **Point** struct type and functions to perform operations on **Point** instances.
+
+To update the program to work with three-dimensional points, we would need to do the following:
+
+1.  add a **z** field to the **Point** struct type
+2.  change the code of functions such as **geometricDistance** to take the additional dimension into account
+
+Assuming that all of the code that does computations on instances of the **Point** type is written to call functions such as **geometricDistance**, instead of doing to computations directly (by accessing the fields), then
+
+> **no additional code changes are needed**
+
+This advantage of struct types and functions---making programs easier to change---is very significant for large and complex programs.

@@ -1,191 +1,135 @@
 ---
 layout: default
-title: Pointers, reference parameters
+title: "Lecture 14: Arrays and functions"
 ---
 
-Pointers and addresses
-======================
+Arrays may be passed to functions. However, they behave somewhat differently than other kinds of variables we've seen.
 
-Recall that a variable is a storage location where a value can be stored.
+Reading Values from Array Parameters
+====================================
 
-Each variable has an *address* naming its storage location. Different variables will have different addresses, because each variable uses a different storage location.
-
-Addresses are really just integers. For example, consider the following code:
+Let's consider a function to compute the average of the element values in an array of double:
 
 {% highlight cpp %}
-int a;
+double computeAverage(double array[], int size)
+{
+    double sum = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
+    }
 
-a = 6;
-{% endhighlight %}
-
-Let's say that when the program runs, the variable **a** has the address **1000000**. When the compiler generates machine instructions for the statement assigning the value 6 to **a**, the instruction will have the form
-
-> store the value **6** in the memory location at address 1000000
-
-So, at a low level, the computer deals with all storage locations in terms of addresses. Variable names are simply a convenience for the human being writing the program using a high-level language like C/C++.
-
-C and C++ provide a mechanism, called *pointers*, to allow you to write programs that explicitly use addresses to refer to variables. Pointers are a useful feature because if you know the address of a variable, you can access the variable (loading a value from it or storing a value into it.)
-
-Pointer variables
------------------
-
-A *pointer variable* is a variable in which the the program will store the address of another variable. Pointer variables are declared by putting an asterisk ("\*") in front of the name of the variable.
-
-Example:
-
-{% highlight cpp %}
-int *p;
-{% endhighlight %}
-
-This declaration defines a variable called **p** in which we may store the address of a variable whose type is **int**. We read this declaration as
-
-> **p** is a pointer-to-int
-
-The right way to think about pointer variables is that they give us an *indirect* way of referring to other variables in the program.
-
-**Analogy**:
-
-> Say that you want to send me a letter. You can accomplish this in two ways.
->
-> You could go to my mailbox, and put the letter in the mailbox. This is like storing a value (letter) in a variable (mailbox) by using the name of the variable explicitly: you are *directly* accessing the variable.
->
-> If you know my **address** --- which describes where my mailbox is *located* --- then you can have the postal service deliver the letter to that address. This works because the address describes the *location* of my mailbox. This is like storing a value (letter) in a variable (mailbox) *indirectly* by using the variable's address.
-
-Address-of operator
--------------------
-
-A variable isn't very useful unless we can store a value in it. Since pointer variables store addresses, we need a way of finding the address of a variable. This is done with the *address-of operator*, which is the ampersand ("&").
-
-Example:
-
-{% highlight cpp %}
-int *p;
-int a;
-
-p = &a; // store the address of a in p
-{% endhighlight %}
-
-Following the assignment of **a**'s address to **p**, we say that
-
-> **p** *points to* **a**
-
-It is very useful to visualize points-to relationships by drawing diagrams. Each variable is represented by a box labeled with the variable's name. The value of the variable goes inside the box. For pointer variables, we represent the value as an arrow starting in the box and ending at the variable that the pointer points to. For example, the diagram
-
-> ![image](images/pPointsToA.png)
-
-indicates that the variable **p** points to the variable **a**, meaning that **p** contains **a**'s address.
-
-Dereference operator
---------------------
-
-In the examples above, the variable **p** is a pointer to int, meaning that it stores the address of an int variable. You can refer to the variable that **p** points to using the *dereference* operator, the asterisk ("\*").
-
-Using the dereference operator is very simple. If **p** is a pointer to an int variable, then
-
-    p
-
-is the address of the variable that **p** points to, and
-
-    *p
-
-**is** the variable that **p** points to.
-
-Example:
-
-{% highlight cpp %}
-int *p;
-int a;
-
-p = &a; // store address of a in p
-
-a = 42;
-printf("%i\n", *p); // prints 42
-{% endhighlight %}
-
-Because **p** contained the address of **a** at the time of the **printf** statement, and because **a** contained the value 42, printing **p** resulted in the output **42** being printed.
-
-We can also *modify* the value of a variable if we have a pointer to it:
-
-{% highlight cpp %}
-int *p;
-int a;
-
-p = &a;
-
-*p = 17;
-
-printf("%i\n", a); // prints 17
-{% endhighlight %}
-
-Even though there is no direct assignment of a value to **a**, the assignment to **\*p** serves as an *indirect* assignment to **a**, since **p** points to **a**.
-
-Assignment of pointer values
-============================
-
-Pointer values are values just like any other kind of value. So, if we use an assignment to copy the value of one pointer variable into another, the result is that both pointers variables end up pointing to the same location/variable.
-
-Example:
-
-{% highlight cpp %}
-int *p;
-int *q;
-int a;
-
-p = &a; // make p point to a
-q = p;  // make q point to the same variable as p
-// (*) see diagram below
-
-a = 121;
-printf("%i\n", *q); // prints 121
-{% endhighlight %}
-
-Here is a diagram showing the points-to relationships just after the assignment **q = p**:
-
-> ![image](images/pointerAliasing.png)
-
-Reference parameters
-====================
-
-You're probably saying to yourself,
-
-> *Sure, this is very interesting and all, but what are pointers actually useful for?*
-
-One important use of pointers is to implement *reference parameters*. A reference parameter is a parameter to a function that is able to modify a variable whose address (pointer) is passed as a parameters. One common use of reference parameters is to allow a function to "return" multiple values.
-
-For example, as we saw in [Lab 12](../labs/lab12.html), a arbitrary color can be represented red, green, and blue color component values in the range 0..255. To compute a random color, we can generate three random integers in this range. Because a function can only directly return a single value, we can't declare the function to return all three values directly. However, we *can* declare the function to take three parameters, each of which is a pointer to **int**. The parameters will point to the variables in which the three random integers should be stored.
-
-Here is an example program to demonstrate this idea:
-
-{% highlight cpp %}
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-void make_rand_color(int *rp, int *gp, int *bp);
-
-int main(void) {
-    srand(time(0));
-    int r, g, b;
-    make_rand_color(&r, &g, &b);
-    printf("Your color is #%2x%2x%2x\n", r, g, b);
-    return 0;
-}
-
-void make_rand_color(int *rp, int *gp, int *bp) {
-    *rp = rand() % 256;
-    *gp = rand() % 256;
-    *bp = rand() % 256;
+    return sum / size;
 }
 {% endhighlight %}
 
-In the **main** function, we pass the addresses of the variables **r**, **g**, and **b** to the **make\_rand\_color** function, which receives them as the parameters **rp**, **gp**, and **bp**. The **make\_rand\_color** function then assigns random values to the variables pointed to by its parameters.
+Note a peculiarity - the parameter variable called array is declared without a specific number of elements. This is an intentional feature of C - it allows you to write functions that will work with arrays of any possible length. So, we will be able to call the **computeAverage()** function on **double** arrays of any size.
 
-Note that the **%x** conversion prints an integer value using hexidecimal, which is a base 16 representation where the digits a-f represent the values 10 through 15.
+> The price we pay for this freedom is that when an array is passed to a function, there is no way of knowing the size of the array. So, functions that have an array parameter will typically also take an **int** parameter specifying the number of elements in the array.
 
-A sample run of this program produced the output
+Let's consider some tests for this function. One thing that we will need to do in testing this function is to define some arrays to use as input to the function. Array variables can be declared with initializers that specify the initial contents of each element of the array.
 
-    Your color is #8b51af
+For example:
 
-In case you're curious, this color is:
+{% highlight cpp %}
+double testArray1[4] = {1.0, 3.0, 1.0, 3.0};
 
-> <div style="width: 200px; height: 80px; background: #8b51af;"></div>
+printf("%lf = %lf\n",2.0,computeAverage(testArray1, 4));
+{% endhighlight %}
+
+The initializer is a comma-separated list of values enclosed in curly braces. Array initializers are useful for assigning some initial values to the elements of an array.
+
+Arrays are Passed By Reference
+==============================
+
+What happens if a function that takes an array parameter assigns new values to one or more of the elements of the array parameter?
+
+Example:
+
+{% highlight cpp %}
+void negateElements(double array[], int size)
+{
+    for (int i = 0; i < size; i++) {
+        array[i] *= -1;
+    }
+}
+{% endhighlight %}
+
+The question is - how is the value of an array variable passed to a function with an array parameter? For the kinds of variables we have seen so far, the value of the variable is copied into the parameter variable in the called function. This is known as *pass-by-value* (i.e. only the *value* is sent to the function) and is the mechanism used for individual variables.
+
+For arrays, no copying is done. Instead, passing an array works like a reference parameter - the array parameter becomes an *alias* for the array used as the argument. This is known as *pass-by-reference* (i.e. the storage location itself is sent to the function). We can see this with a test:
+
+{% highlight cpp %}
+double testArray1[3] = {4.5, -3.6, 0.0};
+
+negateElements(testArray1, 3);
+
+printf("%lf = %lf\n",-4.5, testArray1[0]);
+printf("%lf = %lf\n", 0.0, testArray1[2]);
+{% endhighlight %}
+
+There are several reasons that array parameters work this way:
+
+> -   Because C arrays do not know their own length, it is impossible to know how many elements an arbitrary array has. Therefore, when passing an array to a function, there would be no way to know (in general) how many elements to copy.
+>
+> -   Arrays can be very large. For example, it would not be at all unusual to have an array with a million elements. Copying this entire array every time it is passed to a function would be time-consuming and require a lot of memory.
+>
+> -   Since functions can only return a *value*, an array cannot be returned from a function. One way to work around this limitation is to write functions that take an array parameter and assign values to the elements of the array parameter.
+>
+Therefore you need to be careful about how you write your programs when passing arrays to functions.
+
+Arrays with a const element type
+================================
+
+You can protect yourself against accidentally modifying an array parameter by making the element type **const**.
+
+Example:
+
+{% highlight cpp %}
+double computeAverage(const double array[], int size)
+{
+    double sum = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
+    }
+    return sum / size;
+}
+{% endhighlight %}
+
+You would read the type of the first parameter as
+
+> "array of const double"
+
+In other words, the element type is **const double**, meaning that assignments to the elements of this array are illegal.
+
+It is always allowed to use an array with a non-const element type as an argument to a function expecting an array with a const element type. For example, the **computeAverage()** function can be called using any array whose element type is (non-const) **double** as an argument.
+
+Passing a multidimensional array to a function
+==============================================
+
+Multidimensional arrays can be passed to a function. Although the number of elements in the first dimension of the array may be omitted (and thus may vary), the number of elements in the other dimensions of the array must be specified.
+
+Example:
+
+{% highlight cpp %}
+#define NUM_COLUMNS 10
+
+double maximumRowSum(double table[][NUM_COLUMNS], int numRows)
+{
+    int j, i;
+    double sum, max;
+
+    for (j = 0; j < numRows; j++) {
+        sum = 0.0;
+        for (i = 0; i < NUM_COLUMNS; i++) {
+            sum += table[j][i];
+        }
+        if (j == 0 || sum > max) {
+            max = sum;
+        }
+    }
+
+    return max;
+}
+{% endhighlight %}
+
+As with one-dimensional arrays, multidimensional arrays are *passed by reference*, so assignments to the array's elements made within the function change the elements of the array passed to the function. Note that any parameters with primitive types (**int**, **double**, etc.) are still *passed-by-value*.

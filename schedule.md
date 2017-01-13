@@ -28,20 +28,20 @@ Feb 23 | [Lecture 7: While loops, coding style](lectures/lecture07.html)<br>Chap
 Feb 28 | Winter vacation, no class
 Mar 2 | Winter vacation, no class
 Mar 7 | [Lecture 8: Nested loops, char data types](lectures/lecture08.html)<br>Chapter 4, *Nested for Loops* | &mdash; | &mdash;
-Mar 9 | Combining loops and if/else
-Mar 14 | 
-Mar 16 | [Lecture 9: Arrays](lectures/lecture09.html)<br>Chapter 6 through *Initializing Arrays* | &mdash; | &mdash;
-Mar 21 | [Lecture 10: Multidimensional arrays](lectures/lecture10.html)<br>Chapter 6, *Multidimensional Arrays* | &mdash; | &mdash;
-Mar 23 | [Lecture 11: Functions, top-down design](lectures/lecture11.html)<br>Chapter 7 through *Automatic Variables* | &mdash; | &mdash;
-Mar 28 | [Lecture 12: Functions that return a value](lectures/lecture12.html)<br>Chapter 7 through *Checking Function Arguments* | &mdash; | &mdash;
-Mar 30 | [Lecture 13: Arrays and functions](lectures/lecture13.html)<br>Chapter 7 through *Multidimensional Variable-Length Arrays and Functions* | &mdash; | &mdash;
-Apr 4 | [Lecture 14: Pointers, reference parameters](lectures/lecture14.html)<br>Chapter 10 through *Using Pointers in Expressions* | &mdash; | &mdash;
-Apr 6 | [Lecture 15: Struct types](lectures/lecture15.html)<br>Chapter 8, through *Using Structures in Expressions* | &mdash; | &mdash;
-Apr 11 | [Lecture 16: Using structs with functions](lectures/lecture16.html)<br>Chapter 8, through *Initializing Structures* | &mdash; | &mdash;
+Mar 9 | [Lecture 9: Combining loops and if/else](lectures/lecture09.html) | &mdash; | &mdash;
+Mar 14 | **Exam 2**
+Mar 16 | [Lecture 10: Arrays](lectures/lecture09.html)<br>Chapter 6 through *Initializing Arrays* | &mdash; | &mdash;
+Mar 21 | [Lecture 11: Multidimensional arrays](lectures/lecture10.html)<br>Chapter 6, *Multidimensional Arrays* | &mdash; | &mdash;
+Mar 23 | [Lecture 12: Functions, top-down design](lectures/lecture11.html)<br>Chapter 7 through *Automatic Variables* | &mdash; | &mdash;
+Mar 28 | [Lecture 13: Functions that return a value](lectures/lecture12.html)<br>Chapter 7 through *Checking Function Arguments* | &mdash; | &mdash;
+Mar 30 | <span class="activity">Functions design activity</span>
+Apr 4 | [Lecture 14: Arrays and functions](lectures/lecture13.html)<br>Chapter 7 through *Multidimensional Variable-Length Arrays and Functions* | &mdash; | &mdash;
+Apr 6 | **Exam 3**
+Apr 11 | [Lecture 15: Pointers, reference parameters](lectures/lecture14.html)<br>Chapter 10 through *Using Pointers in Expressions* | &mdash; | &mdash;
 Apr 13 | Spring vacation, no class
-Apr 18 | [Lecture 17: Pointers to structures](lectures/lecture17.html)<br>Chapter 10, *Working with Pointers and Structures* | &mdash; | &mdash;
-Apr 20 | [Lecture 18: Composition](lectures/lecture18.html)<br>Chapter 8, *Structures Containing Structures* | &mdash; | &mdash;
-Apr 25 | [Lecture 19: Arrays of structures](lectures/lecture19.html)<br>Chapter 8, *Arrays of Structures* | &mdash; | &mdash;
-Apr 27 | &mdash; | &mdash; | &mdash;
-May 2 | &mdash; | &mdash; | &mdash;
-May 4 | &mdash; | &mdash; | &mdash;
+Apr 18 | [Lecture 16: Struct types](lectures/lecture15.html)<br>Chapter 8, through *Using Structures in Expressions* | &mdash; | &mdash;
+Apr 20 | [Lecture 17: Using structs with functions](lectures/lecture16.html)<br>Chapter 8, through *Initializing Structures* | &mdash; | &mdash;
+Apr 25 | [Lecture 18: Pointers to structures](lectures/lecture17.html)<br>Chapter 10, *Working with Pointers and Structures* | &mdash; | &mdash;
+Apr 27 | [Lecture 19: Composition](lectures/lecture18.html)<br>Chapter 8, *Structures Containing Structures* | &mdash; | &mdash;
+May 2 | [Lecture 20: Arrays of structures](lectures/lecture19.html)<br>Chapter 8, *Arrays of Structures* | &mdash; | &mdash;
+May 4 | **Exam 4**
