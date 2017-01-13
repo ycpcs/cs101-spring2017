@@ -193,4 +193,10 @@ dt {
 	font-size: 80%;
 }
 
-
+.activity {
+	background: #226;
+	color: white;
+	padding: 0px 6px;
+	border: 2px solid #226;
+	border-radius: 12px;
+}
