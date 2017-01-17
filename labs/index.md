@@ -5,13 +5,16 @@ title: "Labs"
 
 This page lists the lab activities.
 
-Although labs are not graded, they are part of the attendance component of the course grade and as such must be submitted by the end of the day they are assigned.  Not completing and submitting the labs will negatively impact your course grade.
+Labs are worth 10% of your course grade.  To receive credit for a lab, you must:
+
+* Get a sign-off for completing the lab's design artifact; make sure you have this at the beginning of class on the day we work on the lab
+* Get a sign-off on the completed program; full credit if you get this sign off by the end of the *next* class (after the day we work on the lab), 80% of full credit if you get the sign off before the next exam
 
 > Date | Lab | File
 > ---- | --- | ----
-> Jan 19th | [Lab 1: Hello CS101!](lab01.html) | [CS101\_Lab01.zip](CS101_Lab01.zip)
-> Jan 24th  | [Lab 2: Expensive Calculator](lab02.html) | [CS101\_Lab02.zip](CS101_Lab02.zip)
-> Jan 26th  | [Lab 3: Math Functions](lab03.html) | n/a
+> Jan 24 | [Lab 1: Hello CS101!](lab01.html) | [CS101\_Lab01.zip](CS101_Lab01.zip)
+> Jan 26  | [Lab 2: Expensive Calculator](lab02.html) | [CS101\_Lab02.zip](CS101_Lab02.zip)
+> Jan 31  | [Lab 3: Math Functions](lab03.html) | n/a
 > &mdash; | [Lab 4: Salary Calculator](lab04.html) | [CS101\_Lab04.zip](CS101_Lab04.zip)
 > &mdash; | [Lab 5: Conditions reading/modifying exercise](lab05.html) | [CS101\_Lab05.zip](CS101_Lab05.zip)
 > &mdash; | [Lab 6: Checking the Weather](lab06.html) | [CS101\_Lab06.zip](CS101_Lab06.zip)
