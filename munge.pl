@@ -1,8 +1,10 @@
 #! /usr/bin/perl
 
+my $inc = shift @ARGV || 136;
+
 sub Xlate {
 	my ($pnum) = @_;
-	return $pnum + 136;
+	return $pnum + $inc;
 }
 
 while (<>) {
