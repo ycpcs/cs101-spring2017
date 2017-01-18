@@ -3,9 +3,9 @@ layout: default
 title: "Assignment 1: Freefalling"
 ---
 
-Due: **Monday, Feb 1st by 11:59 PM**
+Design due: **Thursday, January 26th** at the beginning of class
 
-**Update** Due: **Friday, Feb 5th by 11:59 PM**
+Program due: **Tuesday, Jan 31st by 11:59 PM**
 
 Getting Started
 ===============
@@ -39,8 +39,16 @@ To run the program, type the command
 
     ./Freefall.exe
 
-Your Task
-=========
+Your Tasks
+==========
+
+## Design
+
+Based on the requirements described below in the "Program" section, fill out a [design template](../design-template.pdf).  Consider what the input and output of the program are, and what steps are necessary to compute the output from the input.
+
+The design is due at the beginning of class on **Thursday, January 26th**.
+
+## Program
 
 Your task is to write a program that prompts the user to enter the height of an object dropped from rest (neglecting air resistance). The program should then print out the object's time to fall to the ground and velocity at impact in several different units including
 
@@ -60,28 +68,17 @@ The velocity of the object at impact was:   31.3 m/sec
 
 The time field should have two decimal places of precision. All of the velocity values should allow for up to four digits *in front* of the decimal point and one digit *after* the decimal point such that the decimal points are aligned in the final output.
 
-Grading
-=======
-
-70% level - obtain user input and properly compute the time
-
-80% level - compute the final velocity in m/sec
-
-90% level - compute the final velocity in ft/sec and mph
-
-100% level - format the output correctly
-
 Hints
 =====
 
 Physics
 -------
 
-The basic physics (which many of you will learn this semester in PHY160) governing an object falling only under the influence of gravity (neglecting air resistance) is integration of the acceleration (which for the earth is -9.81 m/sec) with respect to time. Hence the velocity of the object as a function of time is given by
+The basic physics (which many of you will learn this semester in PHY160) governing an object falling only under the influence of gravity (neglecting air resistance) is integration of the acceleration (which for the earth is -9.81 m/s<sup>2</sup>) with respect to time. Hence the velocity of the object as a function of time is given by
 
 > ![image](images/assign01/veleq.png)
 
-where *v(t)* is the velocity at time *t*, *a* is the acceleration due to gravity (-9.81 m/sec), and *v*<sub>0</sub> is the initial velocity (which for this assignment is 0).
+where *v(t)* is the velocity at time *t*, *a* is the acceleration due to gravity (-9.81 m/s<sup>2</sup>), and *v*<sub>0</sub> is the initial velocity (which for this assignment is 0).
 
 The position of the object as a function of time is found by integrating the velocity with respect to time as follows
 
@@ -122,10 +119,28 @@ which returns a **double** value which is the square root of *x*. You will need 
 
 See pages 346&ndash;353 of the textbook for details regarding the conversion specifiers for **printf**.
 
+Grading
+=======
+
+The overall assignment is out of 100 points.
+
+**Design**:
+
+The design is worth up to 15 points.  The design will be graded for effort rather than correctness, so if you make a good faith effort, you should receive full credit for the design.  *However*, if your design is not correct, it will be difficult to implement the program.  We will go over a correct design in class on the day the designs are due, and it is likely that you will receive feedback on your design if you meet with your instructor or a tutor to get help on the assignment.
+
+**Program**:
+
+* Obtaining user input and correctly computing the time is worth up to 55 points
+* Above, and computing the final velocity in m/s is worth up to 65 points
+* Above, and computing the final velocity in ft/s and mph is worth up to 75 points
+* Above, and output formatted correctly is worth up to 85 points
+
 Submitting
 ==========
 
-To submit your work, make sure your **Freefall.cpp** file is saved, and in the Cygwin window type the command
+Your design will be checked off in class on the day the designs are due.
+
+To submit your program, make sure your **Freefall.cpp** file is saved, and in the Cygwin window type the command
 
     make submit
 
