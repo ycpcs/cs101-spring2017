@@ -20,6 +20,7 @@ All information about the course will be posted here.
 * [Submitting labs and assignments](submitting.html)
 * [Reference card \[PDF\]](refcard.pdf)
 * [Design template \[PDF\]](design-template.pdf)
+* [Design information](design/index.html)
 * [Practice exams](practice/index.html)
 
 ## News
