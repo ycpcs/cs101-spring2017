@@ -5,7 +5,7 @@ title: "Design Information"
 
 This page has information about how to use the [design template](../design-template.pdf) and links to example designs.
 
-Coming soon: how to use the design template.
+The ["How to" guide](design-howto.pdf) explains each section of the design template.
 
 Design examples:
 
