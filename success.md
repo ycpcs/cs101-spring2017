@@ -81,15 +81,15 @@ You should understand that you do not represent a "group": you are just you.  Yo
 
 This section describes some practices you should adopt in order to be successful in the course.
 
-*Attend class*.  We will use our class time for [peer instruction](http://mazur.harvard.edu/research/detailspage.php?rowid=8) as well as hands-on lab activities.  Class time is also a great time to ask questions (good questions, of course.)
+*Attend class*.  We will use our class time for group design critiques as well as hands-on lab activities.  Class time is also a great time to ask questions (good questions, of course.)
 
-*Prepare for class*.  Do the reading and the [CloudCoder exercises](schedule.html) before you come to class.
+*Prepare for class*.  Do the reading and the [CloudCoder exercises](schedule.html) before you come to class.  Complete the [design artifact](design/index.html) for the lab, and the design artifact for the assignment if one is due.
 
-*Start the lab before class*. You should start the day's lab (and ideally, *finish* it) before you come to class.  This will help you learn the day's topics (which is helpful for the peer instruction clicker quiz), and will allow you to ask good questions about the lab if you need help completing it.  In general, we don't guarantee that there will be enough time to finish a lab in class unless you start it beforehand.
+*Start the lab before class*. Before you come to class, you should read the lab description carefully and complete the design artifact for the lab.  If you would like to start working on the code for the lab on your own (and perhaps finish it), that's even better.  Being prepared will allow you to ask good questions about the lab, and maximize your chance of receiving full credit for it.
 
 *Practice*.  The way you will become a proficient programmer is through sustained and deliberate practice.  We provide you opportunities to practice in the form of [CloudCoder exercises](schedule.html), [labs](labs/index.html), and [assignments](assign/index.html).  The schedule also has recommended exercises from the textbook.  Take advantage of every opportunity to practice that you can find!
 
-*Work individually*.  Although you are allowed to collaborate on labs and assignments, you will learn more if you work mostly on your own.  Occasionally getting some help is OK, but ultimately it is your responsibility to learn the material, and you should never deny yourself opportunities to learn and discover on your own.
+*Be responsible for your individual learning*.  Although you are encouraged to collaborate on labs and assignments, make sure that you fully understand what you are doing.  Don't just copy other people's code.
 
 **START ASSIGNMENTS EARLY**.  The best way to complete a programming assignment is to start them early, and then work incrementally, making steady progress towards completion of the assignment's requirements.  If you waiting until the last minute, you are denying yourself the opportunity to maximize your learning experience.
 
