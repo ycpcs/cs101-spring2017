@@ -25,4 +25,5 @@ All information about the course will be posted here.
 
 ## News
 
+* **Jan 19** &mdash; [Assignment 1](assign/assign01.html) has been posted.  The design artifact is due at the beginning of class on Thursday, Jan 26th.  The completed program is due Tuesday, Jan 31st by 11:59 PM.
 * **Jan 19** &mdash; Welcome back!

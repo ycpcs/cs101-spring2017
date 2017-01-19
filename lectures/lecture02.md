@@ -139,7 +139,7 @@ printf("You are %i years old\n", age);
 The use of the **age** variable in the **printf** statement is a variable reference. The variable reference will compute whatever **int** value was stored in the variable by the **scanf** statement.
 
 Expressions using operators
-===========================
+---------------------------
 
 Literals and variable references are the most basic kinds of expressions.
 
@@ -194,7 +194,7 @@ The total cost is $7.90
 </pre>
 
 Integer Division and Modulus
-============================
+----------------------------
 
 Question: what output does the following code fragment print?
 
@@ -248,7 +248,7 @@ print("%i / %i = %i\n", a, b, quotient);
 Even though mathematically 7 / 4 = 1.75, this code fragment prints "1" because the fractional part, .75, is truncated from the result of the division.
 
 Operator Precedence
-===================
+-------------------
 
 As in algebra, operators in C obey precedence rules which determine, for expressions containing multiple operators, the order in which the operators are applied.
 
