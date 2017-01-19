@@ -95,7 +95,7 @@ Once the program is compiled, run the program by typing the following command in
 Hints
 =====
 
--   Put **#include <stdio.h>** at the top of **hello.cpp**. This will allow your progam to use the **printf** and **scanf** functions.
+-   Put **#include &lt;stdio.h&gt;** at the top of **hello.cpp**. This will allow your progam to use the **printf** and **scanf** functions.
 -   Use the **printf** function to print output to the screen.
 -   Declare an **int** variable to store the user's age.
 -   Use the **scanf** function to read the user's age.
