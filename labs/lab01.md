@@ -109,8 +109,30 @@ When you are done, run the following command from the Cygwin bash shell:
 
 You will be prompted for your Marmoset username and password, which you should have received by email. The entire submission process should produce output that looks something like the following:
 
+<pre>
+$ <b>make submit</b>
+Creating submit.properties file
+Collecting the names of files to be submitted
+Creating a solution zip file
+updating: hello.cpp (deflated 4%)
+updating: submitToMarmoset.pl (deflated 60%)
+updating: Makefile (deflated 52%)
+perl submitToMarmoset.pl solution.zip submit.properties
+Enter your username: <b>jstudent</b>
+Enter your password: 
+######################################################################
+              >>>>>>>> Successful submission! <<<<<<<<<
+
+Make sure that you log into the marmoset server to manually
+check that the files you submitted are correct.
+
+Details:
+
+         Semester:   Spring 2017
+         Course:     CS 101
+         Assignment: lab01
+
+######################################################################
+</pre>
+
 You will use your own username in place of "jstudent". Note that when you type your password, it will not be echoed to the screen.
-
-**Important**:
-
-> You **must** submit your work before leaving class. If you do not submit, you will not receive any credit for the lab.
