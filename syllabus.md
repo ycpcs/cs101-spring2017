@@ -12,7 +12,7 @@ Staff:
 
 > Section(s) | Instructor | Office hours
 > ---------- | ---------- | ------------
-> 101 | Don Hake, <djhake@ycp.edu> | KEC 137, TBD
+> 101 | Don Hake, <djhake@ycp.edu> | KEC 137, MWF 10-11 AM, T,Th 9:15-10:30 AM, and by appt
 > 102, 103, 106 | David Hovemeyer, <dhovemey@ycp.edu> | KEC 113, M-Th 1-2 PM, F 10-11 AM
 > 104, 105 | Deepti Jindal, <djindal@ycp.edu> | TBD
 
