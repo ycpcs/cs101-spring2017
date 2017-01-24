@@ -129,6 +129,7 @@ Example:
 
 {% highlight cpp %}
 int age;
+printf("How old are you? ");
 scanf("%i", &age);
 printf("OK, you are %i years old\n", age);
 {% endhighlight %}
