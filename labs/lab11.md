@@ -1,14 +1,14 @@
 ---
 layout: default
-title: "Lab 11: More array exercises"
+title: "Lab 11: Array Exercises"
 ---
 
 Today's lab is to do the following CloudCoder exercises:
 
-> Week6 &rarr; [Pair sums](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=497)
+> Week9 &rarr; [Basic array entry](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=520)
 >
-> Week6 &rarr; [Exceeded Amount](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=498)
+> Week9 &rarr; [Swap array](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=521)
 >
-> Week8 &rarr; [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=499) <img src="{{site.baseurl}}/img/goldstar-tiny.png" />
-
-<img src="{{site.baseurl}}/img/goldstar-tiny.png" /> &mdash; This one is challenging!
+> Week9 &rarr; [Repeated values](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=522)
+>
+> Week9 &rarr; [Fibonacci numbers (array)](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=523)
