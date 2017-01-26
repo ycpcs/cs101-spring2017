@@ -10,7 +10,7 @@ Program due: **Tuesday, Jan 31st by 11:59 PM**
 Getting Started
 ===============
 
-Start by downloading [CS101\_Assign01.zip](src\CS101_Assign01.zip), saving it in the directory **CS101** within your home directory.
+Start by downloading [CS101\_Assign01.zip](CS101_Assign01.zip), saving it in the directory **CS101** within your home directory.
 
 If you are on Windows, start a **Cygwin Bash Shell** and run the following commands:
 
