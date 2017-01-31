@@ -29,6 +29,7 @@ Evening sessions
 ----------------
 
 Monday and Wednesday evening drop-in hours are 6:30-8:30 PM, in KEC 123.
+
 Tuesday and Thursday evening drop-in hours are 6:00-8:00 PM, in KEC 123.
 
 **Important**: Be aware that the evening sessions can be very busy close to an assignment deadline.  Your best bet is to *start assignments early* and *ask questions early* to avoid the rush.
