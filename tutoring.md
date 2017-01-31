@@ -16,36 +16,29 @@ The tutors' job is to help students in the course learn the material.  Please do
 In class
 --------
 
-Coming soon!
-
-<!--
 The in-class tutors are
 
-* Section 101: 
-* Section 102: 
-* Section 103: 
-* Section 104: 
-* Section 105: 
-* Section 106: 
--->
+* Section 101: ?
+* Section 102: Jason Porter
+* Section 103: ?
+* Section 104: ?
+* Section 105: ?
+* Section 106: ?
 
 Evening sessions
 ----------------
 
-Coming soon!
-
-<!--
-The evening drop-in hours are 6-8 PM, M-Th, in KEC 119.
+Monday and Wednesday evening drop-in hours are 6:30-8:30 PM, in KEC 123.
+Tuesday and Thursday evening drop-in hours are 6:00-8:00 PM, in KEC 123.
 
 **Important**: Be aware that the evening sessions can be very busy close to an assignment deadline.  Your best bet is to *start assignments early* and *ask questions early* to avoid the rush.
 
 The evening tutors are:
 
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
--->
+* Monday (6:30-8:30): Mat Jones, Robert Jones
+* Tuesday (6:00-8:00): Travis Jones, Jason Porter, Garrett Ruths
+* Wednesday (6:30-8:30): Mat Jones, Darren Webb, Robert Jones, Jason Porter
+* Thursday (6:00-8:00): Felix Diaz, Nick Van De Mark, Garrett Ruths
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
