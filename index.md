@@ -22,6 +22,7 @@ All information about the course will be posted here.
 * [Design template \[PDF\]](design-template.pdf)
 * [Design information](design/index.html)
 * [Practice exams](practice/index.html)
+* [Code examples](examples/index.html)
 
 ## News
 
