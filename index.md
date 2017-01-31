@@ -25,6 +25,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Jan 31** &mdash; **Exam 1** will take place in class on **Tuesday, Feb 14th**.  It is closed book and closed notes: however, you will have the [reference card](refcard.pdf) as a reference.  There will be a written part and a programming part.  The [Practice Exams](practice/index.html) page has a practice exam.
 * **Jan 31** &mdash; [Assignment 2](assign/assign02.html) has been posted.  There are two milestones; see the assignment description for deliverables and due dates.
 * **Jan 21** &mdash; The [Schedule](schedule.html) has been updated with suggested textbook exercises.
 * **Jan 19** &mdash; [Assignment 1](assign/assign01.html) has been posted.  The design artifact is due at the beginning of class on Thursday, Jan 26th.  The completed program is due Tuesday, Jan 31st by 11:59 PM.
