@@ -15,4 +15,4 @@ Consider the following animal classification flowchart:
 
 > ![Animal classification flowchart](images/lab05/animals.png)
 
-Yeah.
+This flowchart describes how to ask the user to answer some yes/no questions in order to determine what kind of animal she is.  (We'll admit that this may not be 100% accurate for all animals.)
