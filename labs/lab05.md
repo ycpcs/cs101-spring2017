@@ -5,7 +5,7 @@ title: "Lab 5: Animal Classifier"
 
 # Getting started
 
-Get started by reading this lab description carefully, and then working in a small group to come up with a design to solve the problem described below.  Use the design artifact you brought to class as a starting point.
+Get started by reading this lab description carefully, completing a [design](../design-template.pdf) to solve the problem described below, and then (in class) working in a small group to finalize a design.
 
 **Do not start writing code** until your group is done with the design.
 
