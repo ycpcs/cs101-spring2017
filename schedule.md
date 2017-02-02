@@ -27,7 +27,7 @@ Feb 21 | [Lecture 7: While loops, coding style](lectures/lecture07.html)<br>Chap
 Feb 23 | <span class="activity">Loops design activity</span> | &mdash;
 Feb 28 | Winter vacation, no class
 Mar 2 | Winter vacation, no class
-Mar 7 | [Lecture 8: Nested loops, char data types](lectures/lecture08.html)<br>Chapter 4, *Nested for Loops* | Week8 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=494)\*, [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=495)![gold star](img/goldstar-tiny.png) | &mdash;
+Mar 7 | [Lecture 8: Nested loops, char data types](lectures/lecture08.html)<br>Chapter 4, *Nested for Loops* | Week8 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=494)\*, [multiplication table](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=533)\*, [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=495)![gold star](img/goldstar-tiny.png) | &mdash;
 Mar 9 | [Lecture 9: Combining loops and if/else](lectures/lecture09.html) | &mdash; | &mdash;
 Mar 14 | **Exam 2**
 Mar 16 | [Lecture 10: Arrays](lectures/lecture09.html)<br>Chapter 6 through *Initializing Arrays* | Week9 &rarr; [Array Scanner](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=496)\*, [Pair sums](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=497)\*, [Exceeded Amount](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=498), [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=499)![gold star](img/goldstar-tiny.png) | 6.4, 6.7
