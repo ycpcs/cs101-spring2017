@@ -69,7 +69,7 @@ One programmatic trick to avoid this error is to write the logical expressions i
 
 e.g. 5 == **x** since this syntax is invalid for assignment (5 = **x**).
 
-Examples of expressions containing relational operators (note these are *expressions* and not *statements*:
+Examples of expressions containing relational operators (note these are *expressions* and not *statements*):
 
 {% highlight cpp %}
 a == 1
@@ -121,7 +121,7 @@ Examples:
 (age >= 35) && (born_in_usa)
 {% endhighlight %}
 
-C doesn't work like English - can't say "if n is equal to 2 or 3" as (**n** == 2 || 3). Instead it must be "if n is equal to 2 OR n is equal to 3" as (**n** == 2 || **n** == 3).
+C doesn't work like English &mdash; we can't say "if n is equal to 2 or 3" as (**n** == 2 \|\| 3). Instead it must be "if n is equal to 2 OR n is equal to 3" as (**n** == 2 \|\| **n** == 3).
 
 If statements (decisions)
 =========================
@@ -132,14 +132,14 @@ General syntax:
 
 <pre>
 if ( <i>condition</i> ) {
-	<i>statements</i>;
+    <i>statements</i>;
 }
 
 if ( <i>condition</i> ) {
-	<i>true statements</i>;
+    <i>true statements</i>;
 }
 else {
-	<i>false statements</i>;
+    <i>false statements</i>;
 }
 </pre>
 
