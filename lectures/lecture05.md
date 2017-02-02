@@ -49,14 +49,14 @@ else {
 }
 {% endhighlight %}
 
-Note that we did not explicitly check the condition (age > 19) before printing "post-teen". That is because this condition is logically implied if the previous conditions (age < 13) and (age >= 13 && age <= 19) are both false.
+Note that we did not explicitly check the condition (age &gt; 19) before printing "post-teen". That is because this condition is logically implied if the previous conditions (age &lt; 13) and (age &gt;= 13 && age &lt;= 19) are both false.
 
 Random Number Generator
 =======================
 
 The function **rand()** generates random integers from 0 to 2,147,483,647.
 
-To use **rand()**, you’ll need **#include <stdlib.h>**.
+To use **rand()**, you’ll need **#include &lt;stdlib.h&gt;**.
 
 To get a random number in a range from 0 to 9, use:
 
@@ -76,7 +76,7 @@ srand(time(0));
 
 somewhere before the first call to **rand()**, where **time(0)** returns the number of seconds since midnight, January 1st, 1970, UTC. Basing the seed on the current time means that **rand()** will (usually) generate different random numbers each time the program is run.
 
-Note: **time(0)** needs **#include <time.h>**.
+Note: **time(0)** needs **#include &lt;time.h&gt;**.
 
 Example:
 
