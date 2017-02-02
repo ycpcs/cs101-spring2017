@@ -74,7 +74,7 @@ To seed the random number generator (only once in the program), use
 srand(time(0));
 {% endhighlight %}
 
-somewhere before the first call to **rand()**, where **time(0)** returns the number of seconds since midnight, January 1st, 1970. Basing the seed on the current time means that **rand()** will (usually) generate different random numbers each time the program is run.
+somewhere before the first call to **rand()**, where **time(0)** returns the number of seconds since midnight, January 1st, 1970, UTC. Basing the seed on the current time means that **rand()** will (usually) generate different random numbers each time the program is run.
 
 Note: **time(0)** needs **#include <time.h>**.
 
