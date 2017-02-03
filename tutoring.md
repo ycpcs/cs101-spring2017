@@ -16,14 +16,14 @@ The tutors' job is to help students in the course learn the material.  Please do
 In class
 --------
 
-The in-class tutors are
+The in-class tutors are:
 
-* Section 101: ?
-* Section 102: Jason Porter
-* Section 103: ?
-* Section 104: ?
-* Section 105: ?
-* Section 106: ?
+* Section 101 (Hake, 8:00-9:15): Kyle Meyers
+* Section 102 (Hovemeyer, 9:30-10:45): Jason Porter
+* Section 103 (Hovemeyer, 11:00-12:15): ???
+* Section 104 (Jindal, 11:00-12:15): Kyle Musco
+* Section 105 (Jindal, 12:30-1:45): Scott Fitzpatrick
+* Section 106 (Hovemeyer, 2:00-3:15): Garret Ruths
 
 Evening sessions
 ----------------
@@ -36,7 +36,7 @@ Tuesday and Thursday evening drop-in hours are 6:00-8:00 PM, in KEC 123.
 
 The evening tutors are:
 
-* Monday (6:30-8:30): Mat Jones, Robert Jones
+* Monday (6:30-8:30): Mat Jones, Robert Jones, Kyle Meyers
 * Tuesday (6:00-8:00): Travis Jones, Jason Porter, Garrett Ruths
 * Wednesday (6:30-8:30): Mat Jones, Darren Webb, Robert Jones, Jason Porter
 * Thursday (6:00-8:00): Felix Diaz, Nick Van De Mark, Garrett Ruths
