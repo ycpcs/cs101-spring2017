@@ -10,3 +10,4 @@ The ["How to" guide](design-howto.pdf) explains each section of the design templ
 Design examples:
 
 * [Lab 1 Design](lab01-design.pdf)
+* [Assignment 2, MS1 example design](assign02ms1.pdf)
