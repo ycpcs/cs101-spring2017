@@ -11,3 +11,4 @@ Jan 24 | [date.cpp](date.cpp) | Read month/day/year and print them as a date
 Jan 26 | [average.cpp](average.cpp) | Read three values and print the average
 Jan 31 | [accel.cpp](accel.cpp) | Compute Tesla acceleration 0-60 in multiples of G
 Feb 9 | [ticket2.cpp](ticket2.cpp) | Ticket discount using if/else if
+Feb 16 | [factors.cpp](factors.cpp) | Find factors of an integer
