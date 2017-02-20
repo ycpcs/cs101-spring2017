@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 14: Simple Stats"
+title: "Lab 14: Right Triangle"
 ---
 
 Getting Started
@@ -19,46 +19,31 @@ Start the **Cygwin Terminal** and run the following commands:
 
 Start the **Notepad++** text editor. Use it to open the files
 
-> **H:\\CS101\\CS101\_Lab14\\Stats.cpp**
+> **H:\\CS101\\CS101\_Lab14\\RightTriangle.cpp**
 
 Your Task
 =========
 
-Write a program that computes some simple statistics from user specified input. Your program should prompt the user to enter four integer values, and then compute the following statistical values based on the user input: the **mean**, the **standard deviation**, the **maximum** value, and the **minimum** value.
+This lab is broken up into four parts. In each part, your task is to write a program that draws a triangle in the terminal window. You **MUST** draw the triangles using the two functions supplied in **RightTriangle.cpp**. The appearance of the triangle will change slightly in each part, so read each part carefully.
 
-You must write the following four functions to perform the computation for these statistical values:
+**Part 0**
 
--   **mean** - Computes the mean of four input values  
-    *Input:* Accepts four integer arguments
+The file **RightTriangle.cpp** file currently has a **main** function as well as two other functions named **print\_spaces** and **print\_lines**. Before doing Parts 1 -4, read the **print\_spaces** and **print\_lines** functions and determine what those functions do. Write comments above each of the functions that describes their inputs and their behavior.
 
-    *Returns* the **mean** of the four integer input values as a **double**
+**Part 1**
 
--   **stddev** - Computes the standard deviation of four input values (see below for an example of how to compute the standard deviation)  
-    *Input:* Accepts four integer arguments
-
-    *Returns* the **standard deviation** of the four integer input values as a **double**
-
--   **max** - Determines the maximum of four input values  
-    *Input:* Accepts four integer arguments
-
-    *Returns* the **maximum** of the four integer input values as an **integer**
-
--   **min** - Determines the minimum of four input values  
-    *Input:* Accepts four integer arguments
-
-    *Returns* the **minimum** of the four integer input values as an **integer**
-
-In all, your final program should have a total of five functions (the four above, plus your **main** function)
-
-Example run (user input in **bold**):
+Write a program that prompts a user to input the height of a right triangle and then draws the triangle in the terminal window. Inside the **main** function, write the code necessary to draw the right triangle like the one shown in the example below. You **MUST** call the **print\_spaces** and **print\_lines** functions from the **main** function to print the space and asterisk characters to the terminal window. **In part 1, DO NOT modify the print\_spaces or print\_lines function.**
 
 <pre>
-Enter four integer values: <b>66 12 33 99</b>
+Example run (user input in **bold**):
 
-The mean of your values is 52.50
-The standard deviation of your values is 33.03
-The max of your values is 99
-The min of your values is 12
+Enter the height for your triangle: <b>6</b>
+     *
+    **
+   ***
+  ****
+ *****
+******
 </pre>
 
 When you are ready to compile the program, in the Cygwin window type the command:
@@ -67,34 +52,56 @@ When you are ready to compile the program, in the Cygwin window type the command
 
 To run the program, in the Cygwin window type the command
 
-    ./Stats.exe
+    ./RightTriangle.exe
 
-**Computing standard deviation**
+**Part 2**
 
-From [Wikipedia (standard deviation)](http://en.wikipedia.org/wiki/Standard_deviation):
+In Part 2, you must modify the **print\_line** function to alter the look of the triangle. Rather than drawing a solid triangle, as in Part 1, you should now draw only the left and right sides of the triangle with an empty center. An example of this triangle can be seen below. You should **NOT** need to modify the code that you wrote for Part 1. That is, do not modify any of the code in your **main** function.
 
-To compute the standard deviation of a set of numbers, such as those below:
+Example run (user input in **bold**):
 
-> ![image](images/lab14/list_of_numbers.png)
+<pre>
+Enter the height for your triangle: <b>6</b>
+     *
+    **
+   * *
+  *  *
+ *   *
+*    *
+</pre>
 
-first, find the **mean** of those numbers
+**Part 3**
 
-> ![image](images/lab14/computing_mean.png)
+For Part 3, you will again need to modify the **print\_line** function. This time, your goal is to modify the left and right sides of the triangle so that it is printed using the '/' and '|' characters as shown below. As with Part 2, you need only change the **print\_line** function. Do not change the **main** function.
 
-then, compute the difference of each data point from the mean, and square the result of each (see hints below):
+Example run (user input in **bold**):
 
-> ![image](images/lab14/computing_difference.png)
+<pre>
+Enter the height for your triangle: <b>4</b>
+     /
+    /|
+   / |
+  /  |
+</pre>
 
-Finally, compute the average of these values, and the take square root to get the standard deviation:
+**Part 4**
 
-> ![image](images/lab14/computing_stddev.png)
+In this last part, you must draw a bottom on your triangle as shown below. To do this, you will need to add a new parameter to the **print\_line** function. This new parameter can be used to tell the **print\_line** function if the line to be drawn is the base of the triangle. Since there are only two different types of lines to draw (base and non-base), consider using a **bool** as the datatype for your new parameter. For this part, you will need to modify the **print\_line** function (as well as its function prototype) and the **main** function.
 
-In this example, the standard deviation is **2**.
+Example run (user input in **bold**):
 
-Hints
-=====
-
-You may find it useful to use the **pow(double x, double y)** function in the **math.h** library: it computes <i>x<sup>y</sup></i> (*x* raised to the power *y*).  You can read more about the **pow** function [here](http://pubs.opengroup.org/onlinepubs/9699919799/functions/pow.html).
+<pre>
+Enter the height for your triangle: <b>9</b>
+        /
+       /|
+      / |
+     /  |
+    /   |
+   /    |
+  /     |
+ /      |
+/-------|
+</pre>
 
 Submitting
 ==========

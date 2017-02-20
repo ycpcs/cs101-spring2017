@@ -1,24 +1,24 @@
 ---
 layout: default
-title: "Lab 26: Baby Names"
+title: "Lab 25: Balance Sheet"
 ---
 
 # Getting Started
 
 As always, you may refer to [Lab 1](lab01.html) if you need a reminder about how to start the **Cygwin Bash Shell** or **Notepad++**.
 
-Begin by downloading [CS101\_Lab26.zip](CS101_Lab26.zip). Save the zip file in the **H:\\CS101** directory.
+Begin by downloading [CS101\_Lab25.zip](CS101_Lab25.zip). Save the zip file in the **H:\\CS101** directory.
 
 Start the **Cygwin Bash Shell** and run the following commands:
 
     cd h:
     cd CS101
-    unzip CS101_Lab26.zip
-    cd CS101_Lab26
+    unzip CS101_Lab25.zip
+    cd CS101_Lab25
 
-Start the **Notepad++** text editor. Use it to open the file
+Start the **Notepad++** text editor. Use it to open the files
 
-> **H:\\CS101\\CS101\_Lab26\\BabyNames.cpp**
+> **H:\\CS101\\CS101\_Lab25\\BalanceSheet.cpp**
 
 When you are ready to compile the program, in the Cygwin window type the command
 
@@ -26,76 +26,87 @@ When you are ready to compile the program, in the Cygwin window type the command
 
 To run the program, in the Cygwin window type the command
 
-    ./BabyNames.exe
+    ./BalanceSheet.exe
 
-### Your task
+# Your Task
 
-In this lab, you will write a program to perform queries on a file containing [baby name popularity data](http://www.ssa.gov/OACT/babynames/) from the Social Security Administration.
+The program prompts the user to enter the name of a file.  The file consists of an integer, specifying a number of bank accounts, and a series of entries, where each entry is an account number and an amount (positive or negative.)
 
-This is the input file that your program will use:
+Here is an example input file (this is `ledger1.txt`, which is included with the lab files):
 
-> [babynames.txt](babynames.txt)
+    5
+    0 1000.00
+    1 650.00
+    2 4375.60
+    3 933.15
+    4 556.10
+    4 3300.90
+    3 -112.45
+    0 6555.44
+    2 33.40
+    1 -197.88
 
-Save it in the directory containing your lab files (`CS101_Lab26`).
+This input specifies that there are 5 bank accounts, and contains 10 entries.  In each entry, the bank account number is an integer (with 0 signifying the first bank account), and a floating point value specifying the amount that should be added to or subtracted from the account balance.
 
-The program should prompt the user to enter a filename, a name, a gender (M for male or F for female), and a decade (1900, 1910, etc.)  The program should then read the contents of the baby name data file looking for a matching record.  If a matching record is found, it should print the popularity rank of the specified name in the specified decade.
+When the program runs, it should start with each account balance set to 0.  Then, as the program reads each entry, it should print a message specifying how much is being added to or subtracted from the account, and update the account balance appropriately.  Once all of the entries have been read and processed, the program should print the final balance of each account.
 
 Here is an example run of the program (user input in **bold**):
-
 <pre>
-Input file: <b>babynames.txt</b>
-Name? <b>Hubert</b>
-Male (M) or Female (F): <b>M</b>
-Decade? <b>1900</b>
-In the 1900s, the name Hubert was ranked 122
+Load which file? <b>ledger1.txt</b>
+Adjust balance of account 0 by 1000.00
+Adjust balance of account 1 by 650.00
+Adjust balance of account 2 by 4375.60
+Adjust balance of account 3 by 933.15
+Adjust balance of account 4 by 556.10
+Adjust balance of account 4 by 3300.90
+Adjust balance of account 3 by -112.45
+Adjust balance of account 0 by 6555.44
+Adjust balance of account 2 by  33.40
+Adjust balance of account 1 by -197.88
+Final balances:
+Balance  0: $  7555.44
+Balance  1: $   452.12
+Balance  2: $  4409.00
+Balance  3: $   820.70
+Balance  4: $  3857.00
 </pre>
 
-Another run:
+Another example run, using `ledger2.txt` as the input file (user input in **bold**):
 
 <pre>
-Input file: <b>babynames.txt</b>
-Name? <b>Harriet</b>
-Male (M) or Female (F): <b>F</b>
-Decade? <b>1940</b>
-In the 1940s, the name Harriet was ranked 183
+Load which file? <b>ledger2.txt</b>
+Adjust balance of account 0 by 4600.30
+Adjust balance of account 1 by 890.55
+Adjust balance of account 2 by 55602.84
+Adjust balance of account 0 by 100.00
+Adjust balance of account 0 by 250.00
+Adjust balance of account 0 by -55.00
+Adjust balance of account 2 by  67.80
+Adjust balance of account 1 by 1200.00
+Adjust balance of account 0 by 770.20
+Final balances:
+Balance  0: $  5665.50
+Balance  1: $  2090.55
+Balance  2: $ 55670.64
 </pre>
 
-One more:
+# Hints
 
-<pre>
-Input file: <b>babynames.txt</b>
-Name? <b>Cadwalader</b>
-Male (M) or Female (F): <b>M</b>
-Decade? <b>1900</b>
-I did not find the name Cadwalader in the 1900s
-</pre>
-
-## Hints
-
-Each line of the file represents the popularity of a particular name (male or female) in a particular decade of the 20th century.  (Here is the first line of the file:
-
-    1900 1 M John 84602
-
-This line indicates that John was ranked number 1 for male baby names in the 1900s.  (The last field is the number of babies recorded as named John in the 1900s.)
-
-You can read an entire line of input from the file as follows:
+The `filename` array will contain the name of the file the user enters.  So, your call to `fopen` should look something like:
 
 {% highlight cpp %}
-int decade, rank, count;
-char gender;
-char name[200];
-
-...
-
-if (fscanf(in, "%i %i %c %s %i", &decade, &rank, &gender, name, &count) == 5) {
-    // one line from the file was read successfully
-    ...
-}
+fopen(filename, "r")
 {% endhighlight %}
 
-This assumes `in` is a variable containing the file handle of the file you're reading from.
+You will need to declare a variable whose type is `FILE *` to store the handle to the open file.
 
-You can stop reading lines from the file when a matching record is found, or when the call `fscanf` indicates that a record was not read successfully.
+Use an array of `double` values to keep track of the account balances.  There will not be more that `MAX_ACCOUNTS` number of accounts.  Don't forget to initialize each balance to zero.
+
+Use `fscanf` to read the number of accounts and the data (account number and transaction amount) in each entry.
+
+The `fscanf` function returns the number of values successfully read.  This gives you a way of detecting the end of the input file: if you are attempting to read an entry (which should consist of two values), and `fscanf` returns a value less than 2, you can assume that the program has reached the end of the input file.
+
+Don't forget to use the `fclose` function to close the file after the program has read all of the input from the file.
 
 # Submitting
 

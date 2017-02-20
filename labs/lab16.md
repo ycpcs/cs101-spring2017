@@ -1,108 +1,67 @@
 ---
 layout: default
-title: "Lab 16: Grass Fire"
+title: "Lab 15: Functions Reading/Modifying Exercise"
 ---
 
-Getting Started
-===============
+# Getting started
 
-Refer to [Lab 1](lab01.html) if you need a reminder about how to start **Cygwin Terminal** or **Notepad++**.
+As always, you may refer to [Lab 1](lab01.html) if you need a reminder about how to start the **Cygwin Terminal** or **Notepad++**.
 
-Start by downloading [CS101\_Lab16.zip](CS101_Lab16.zip), saving it in the directory **H:\\CS101**.
+Begin by downloading [CS101\_Lab15.zip](CS101_Lab15.zip). Save the zip file in the **H:\\CS101** directory.
 
-Start a **Cygwin Terminal** and run the following commands:
+Start the **Cygwin Terminal** and run the following commands:
 
     cd h:
     cd CS101
-    unzip CS101_Lab16.zip
-    cd CS101_Lab16
+    unzip CS101_Lab15.zip
+    cd CS101_Lab15
 
-Using **Notepad++**, open the file
+Start the **Notepad++** text editor. Use it to open the files
 
-> **H:\\CS101\\CS101\_Lab16\\GrassFire.cpp**
+> **H:\\CS101\\CS101\_Lab15\\Part1.cpp**
 
-Run the command
+> **H:\\CS101\\CS101\_Lab15\\Part2.cpp**
 
-    make
+# Your Task
 
-when you are ready to compile the program. To run the program, run the command
+Your task is broken up into two parts.
 
-    ./GrassFire.exe
+Some of the parts ask you to make predictions and write them down.  You should save your predictions in the file **experiment.txt**.  You can use Notepad++ (or any text editor) to open this file.
 
-Your Task
----------
+## Part 1
 
-Your task is to implement a one-dimensional grass fire simulation using functions. The simulation consists of a sequence of cells, each of which represents either grass or fire. At each time step of the simulation, cells are updated according to the following rules:
+Consider the program in **Part1.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
 
--   If a cell is currently grass, and either its left or right neighbors is one fire, then it catches on fire
--   If a cell is currently on fire, it stays on fire
+Compile the program by running the command
 
-The program should prompt the user to enter how many cells there will be, the initial data for each cell (0 is grass, 1 is fire), and how many generations to simulate.
+    make Part1.exe
 
-The first line of output should be the initial state. The rest of the lines of output should indicate each subsequent state (as the initial fires spread.)
+Then execute the program by running the command
 
-Example run (user input in **bold**):
+    ./Part1.exe
 
-<pre>
-How many cells? <b>20</b>
-<b>0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0</b>
-How many generations? 8
-,,,,*,,,,,,,,,*,,,,,
-,,,***,,,,,,,***,,,,
-,,*****,,,,,*****,,,
-,*******,,,*******,,
-*********,*********,
-********************
-********************
-********************
-********************
-</pre>
+Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
 
-<!-- **** -->
+Finally, modify the program so that the output [looks like this](lab15Part1Output.html) (click link to see).  You should only need to modify the **choose** function.
 
-Functions
-=========
+## Part 2
 
-To simplify the simulation, implement the following functions:
+Consider the program in **Part2.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
 
-**void read\_cells(int cells[], int num\_cells)**
+Compile the program (`make Part2.exe`) and execute the program (`./Part2.exe`).
 
-> This function should read exactly **num\_cells** integer values and store them in the elements of the **cells** array.
+Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
 
-**void print\_cells(int cells[], int num\_cells)**
+Finally, modify the program so that the output [looks like this](lab15Part2Output.html) (click link to see).  You should **not** need to modify the **choose** function.
 
-> This function should print a textual representation of the contents of the **cells** array. Each **0** value in the array should result in a comma (,) being printed, and each **1** value should result in an asterisk (\*) being printed. The **num\_cells** parameter specifies the number of elements in the **cells** array.
+# Submitting
 
-**void update\_cells(int cells[], int num\_cells)**
-
-> This function should implement one time step of the simulation. Each element in the **cells** array should be updated according to the rules of the simulation. Note that you will probably want to use a temporary array within the function to store the new values, and then copy the updated values back to the original **cells** array. *Hint*: use the **copy\_cells** function (see below) to copy the contents of the temporary array back to the original array. The **num\_cells** parameter specifies the number of elements in the **cells** array.
-
-**void copy\_cells(int source[], int dest[], int num\_cells)**
-
-> Copy all of the element values from the **source** array to the **dest** array. The **num\_cells** parameter specifies how many elements are in the **source** array.
-
-Hints/Specifications
-====================
-
-The program should allow at least 100 cells to be simulated. Use a **\#define** constant to specify this maximum, and use it when declaring your array(s).
-
-Start by getting the user input. Implement the **read\_cells** function to read the cell values into the array.
-
-Next, implement the **print\_cells** function so that the program can print out the initial configuration of the simulation.
-
-Finally, implement the simulation loop so that it calls the **update\_cells** and **print\_cells** functions. It will be helpful to call **copy\_cells** from the **update\_cells** function, in order to copy the update cell value back into the main cell data array.
-
-> <div class="callout"> **Important**: make sure that your **update\_cells** function does not make any out of bounds array accesses. Specifically, updating the first and last cell will need to be handled specially because they have no left and right neighbor, respectively. These nonexistent neighbors should be considered to be grass (not on fire). </div>
-
-Submitting
-----------
-
-To submit your work, type the command
+When you are done, run the following command from the Cygwin bash shell:
 
     make submit
 
-Enter your Marmoset username and password (which you should have received by email.) Note that your password will not be echoed to the screen.
+You will be prompted for your Marmoset username and password, which you should have received by email. Note that your password will not appear on the screen.
 
 **Important**:
 
-> You **must** submit your work before leaving class. If you do not submit, you will not receive any credit for the lab.
+> You **must** submit your work before leaving class. If you do not submit work, you will not receive any credit for the lab.

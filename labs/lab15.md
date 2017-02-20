@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "Lab 15: Functions Reading/Modifying Exercise"
+title: "Lab 15: Simple Stats"
 ---
 
-# Getting started
+Getting Started
+===============
 
 As always, you may refer to [Lab 1](lab01.html) if you need a reminder about how to start the **Cygwin Terminal** or **Notepad++**.
 
@@ -18,43 +19,85 @@ Start the **Cygwin Terminal** and run the following commands:
 
 Start the **Notepad++** text editor. Use it to open the files
 
-> **H:\\CS101\\CS101\_Lab15\\Part1.cpp**
+> **H:\\CS101\\CS101\_Lab15\\Stats.cpp**
 
-> **H:\\CS101\\CS101\_Lab15\\Part2.cpp**
+Your Task
+=========
 
-# Your Task
+Write a program that computes some simple statistics from user specified input. Your program should prompt the user to enter four integer values, and then compute the following statistical values based on the user input: the **mean**, the **standard deviation**, the **maximum** value, and the **minimum** value.
 
-Your task is broken up into two parts.
+You must write the following four functions to perform the computation for these statistical values:
 
-Some of the parts ask you to make predictions and write them down.  You should save your predictions in the file **experiment.txt**.  You can use Notepad++ (or any text editor) to open this file.
+-   **mean** - Computes the mean of four input values  
+    *Input:* Accepts four integer arguments
 
-## Part 1
+    *Returns* the **mean** of the four integer input values as a **double**
 
-Consider the program in **Part1.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
+-   **stddev** - Computes the standard deviation of four input values (see below for an example of how to compute the standard deviation)  
+    *Input:* Accepts four integer arguments
 
-Compile the program by running the command
+    *Returns* the **standard deviation** of the four integer input values as a **double**
 
-    make Part1.exe
+-   **max** - Determines the maximum of four input values  
+    *Input:* Accepts four integer arguments
 
-Then execute the program by running the command
+    *Returns* the **maximum** of the four integer input values as an **integer**
 
-    ./Part1.exe
+-   **min** - Determines the minimum of four input values  
+    *Input:* Accepts four integer arguments
 
-Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
+    *Returns* the **minimum** of the four integer input values as an **integer**
 
-Finally, modify the program so that the output [looks like this](lab15Part1Output.html) (click link to see).  You should only need to modify the **choose** function.
+In all, your final program should have a total of five functions (the four above, plus your **main** function)
 
-## Part 2
+Example run (user input in **bold**):
 
-Consider the program in **Part2.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
+<pre>
+Enter four integer values: <b>66 12 33 99</b>
 
-Compile the program (`make Part2.exe`) and execute the program (`./Part2.exe`).
+The mean of your values is 52.50
+The standard deviation of your values is 33.03
+The max of your values is 99
+The min of your values is 12
+</pre>
 
-Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
+When you are ready to compile the program, in the Cygwin window type the command:
 
-Finally, modify the program so that the output [looks like this](lab15Part2Output.html) (click link to see).  You should **not** need to modify the **choose** function.
+    make
 
-# Submitting
+To run the program, in the Cygwin window type the command
+
+    ./Stats.exe
+
+**Computing standard deviation**
+
+From [Wikipedia (standard deviation)](http://en.wikipedia.org/wiki/Standard_deviation):
+
+To compute the standard deviation of a set of numbers, such as those below:
+
+> ![image](images/lab15/list_of_numbers.png)
+
+first, find the **mean** of those numbers
+
+> ![image](images/lab15/computing_mean.png)
+
+then, compute the difference of each data point from the mean, and square the result of each (see hints below):
+
+> ![image](images/lab15/computing_difference.png)
+
+Finally, compute the average of these values, and the take square root to get the standard deviation:
+
+> ![image](images/lab15/computing_stddev.png)
+
+In this example, the standard deviation is **2**.
+
+Hints
+=====
+
+You may find it useful to use the **pow(double x, double y)** function in the **math.h** library: it computes <i>x<sup>y</sup></i> (*x* raised to the power *y*).  You can read more about the **pow** function [here](http://pubs.opengroup.org/onlinepubs/9699919799/functions/pow.html).
+
+Submitting
+==========
 
 When you are done, run the following command from the Cygwin bash shell:
 

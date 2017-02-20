@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Lab 21: Complex numbers"
+title: "Lab 21: Boing! revisited"
 ---
 
-In this lab you will define a struct type to represent complex numbers, create accessor functions to add, multiply, and find the magnitude of complex numbers, and then implement an interesting computation using complex numbers.
+In this lab, you will implement an animation of a bouncing character using the console graphics functions, using a struct type to represent the current state of the animation and using *accessor functions* to perform operations.
 
 Getting Started
 ===============
@@ -21,7 +21,7 @@ Start the **Cygwin Bash Shell** and run the following commands:
 
 Start the **Notepad++** text editor. Use it to open the files
 
-> **H:\\CS101\\CS101\_Lab21\\Complex.cpp**
+> **H:\\CS101\\CS101\_Lab21\\Boing2.cpp**
 
 When you are ready to compile the program, in the Cygwin window type the command
 
@@ -29,89 +29,75 @@ When you are ready to compile the program, in the Cygwin window type the command
 
 To run the program, in the Cygwin window type the command
 
-    ./Complex.exe
+    ./Boing2.exe
 
 Your Task
 =========
 
-There are three tasks.
+In this lab, you will implement a simple bouncing ball animation using the console window.
 
-First Task
-----------
+Here is the main function of the program in **Boing2.cpp**, which you will not need to change:
 
-Define a struct data type called **Complex**. Instances of this type represent [complex numbers](http://en.wikipedia.org/wiki/Complex_number) consisting of a real component and an imaginary component.
+{% highlight cpp %}
+int main(void) {
+    // NOTE: you don't need to change anything in the main() function
 
-You should add two fields of type **double** to the struct, one to represent the real part of the complex number, one to represent the imaginary part.
+    struct Scene myScene;
 
-Second Task
------------
+    myScene = scene_init();
 
-At the top of **Complex.cpp** are six function prototypes declaring functions whose names begin with "complex\_". Implement these functions as follows:
+    int keep_going = 1;
+    while (keep_going == 1) {
+        // clear the off-screen display buffer
+        cons_clear_screen();
 
-**struct Complex complex\_create(double real, double imag)**  
-Return a **struct Complex** instance that has the given real and imaginary values.
+        // render the scene into the display buffer
+        scene_render(myScene);
 
-**struct Complex complex\_add(struct Complex c1, struct Complex c2)**  
-Return the sum of the two complex numbers given as parameters. If **a** and **b** are the real and imaginary parts of **c1**, and **c** and **d** are the real and imaginary parts of **c2**, then the sum has **a**+**c** as its real part, and **b**+**d** as its imaginary part.
+        // copy the display buffer to the display
+        cons_update();
 
-**struct Complex complex\_multiply(struct Complex c1, struct Complex c2)**  
-Return the product of the two complex numbers given as parameters. If **a** and **b** are the real and imaginary parts of **c1**, and **c** and **d** are the real and imaginary parts of **c2**, then the product has **ac**-**bd** as its real part, and **bc**+**ad** as its imaginary part.
+        // pause
+        cons_sleep_ms(ANIMATION_DELAY);
 
-**double complex\_magnitude(struct Complex c)**  
-Return the magnitude of the complex number given as the parameter. The magnitude is the square root of the sum of the squares of the real and imaginary parts.
+        // update the scene
+        myScene = scene_update(myScene);
 
-**double complex\_get\_real(struct Complex c)**  
-Returns the real part of the complex number given as the parameter.
+        // see if the user has pressed a key
+        int key = cons_get_keypress();
+        if (key != -1) {
+            keep_going = 0;
+        }
+    }
 
-**double complex\_get\_imaginary(struct Complex c)**  
-Returns the imaginary part of the complex number given as the parameter.
+    return 0;
+}
+{% endhighlight %}
 
-Once you implement these functions, you can test your implementation by running the program:
+The idea is simple:
 
-<pre>
-(1) Run tests, or (2) Mandelbrot set? <b>1</b>
-complex_get_real (first test): passed
-complex_get_real (second test): passed
-complex_get_imaginary (first test): passed
-complex_get_imaginary (second test): passed
-complex_add (real part): passed
-complex_add (imaginary part): passed
-complex_multiply (real part): passed
-complex_multiply (imaginary part): passed
-complex_magnitude: passed
-All tests passed!
-</pre>
+-   the **myScene** variable represents the scene to be displayed (the location and current direction of the animated character)
+-   the **scene\_init()** function returns a **Scene** with its fields initialized to default initial values
+-   the **scene\_render()** function takes the current scene as a parameter (by value) and, using the **cons\_move\_cursor()**, **cons\_change\_color()**, and **cons\_printw()** functions, renders the current scene into an off-screen display buffer. (Note: **cons\_printw()** works just like **printf()**, except that it prints text into an off-screen display buffer, rather than printing directly into the window. This eliminates display flickering.)
+-   the **scene\_update()** function takes the current **Scene** as a parameter and returns an updated **Scene** representing the next frame of animation (so that the position of the character changes, and if the character has bounced, then its direction should change as well)
 
-The last line of output should read **All tests passed!**
+Your task is to add fields to the **Scene** struct type to keep track of the state of the animation, and to implement the functions **scene\_init()**, **scene\_render()**, and **scene\_update()**. You must implement these functions such that the program will display a "bouncing character" animation, just like in [Lab 19](lab19.html).
 
-Third Task
-----------
+> ![image](images/lab19/boing.gif)
 
-The [Mandelbrot Set](http://en.wikipedia.org/wiki/Mandelbrot_set) is a famous mathematical object. It is a set of complex numbers defined by an equation with complex numbers Z and C:
+The general idea is that the **struct Scene** type should contain fields that maintain the position and direction of the animated character. For example, in my bouncing ball implementation, my **struct Scene** type is defined this way:
 
-> Z = Z<sup>2</sup> + C
+{% highlight cpp %}
+struct Scene {
+    int x, y;
+    int dx, dy;
+};
+{% endhighlight %}
 
-The complex number C is in the Mandelbrot sert if and only if the equation can be iterated an infinite number of times without the magnitude of Z ever reaching 2. "Iterating" the equation works as follows:
-
--   The initial value of Z is real=0, imaginary=0
--   From the current value of Z, we can compute a new value of Z by squaring the old value and adding C
-
-The third task is to complete the **mandelbrot\_num\_iters** function, whose prototype looks like this:
-
-    int mandelbrot_num_iters(struct Complex c, int max_iters);
-
-It takes a complex number, which represents C in the equation above. The function should return the number of times the equation (Z = Z<sup>2</sup> + C) can be iterated before the magnitude of Z reaches 2. If the number of iterations reaches **max\_iters**, then **max\_iters** should be returned: this caps the maximum number of iterations (because for points within the Mandelbrot set, the equation can be iterated an infinite number of times.)
-
-Once you implement this function, you can run the program and enter the value **2** when prompted. You should then see something similar to the following (click for full-size image):
-
-> <a href="images/lab21/mandelbrot.png"><img style="width: 600px;" alt="Mandelbrot set" src="images/lab21/mandelbrot.png"></a>
-
-Note that you will get a more accurate picture if you make the font smaller and the terminal window larger.
-
-What you are seeing is a graphical representation of part of the Mandelbrot set on the Complex plane. Each point is a complex number C, where the x coordinate is the real part, and the y coordinate is the imaginary part. Black locations are complex numbers that are in the set. The other colors represent how many iterations were required to show that a particular complex number was not in the set.
+The **x** and **y** fields maintain the current column and row of the ball, and the **dx** and **dy** fields maintain the current direction (1 for forward, -1 for backward) for the **x** and **y** directions.
 
 Submitting
-----------
+==========
 
 When you are done, run the following command from the Cygwin bash shell:
 

@@ -21,21 +21,21 @@ Labs are worth 10% of your course grade.  To receive credit for a lab, you must:
 > Feb 16 | [Lab 7: For loops](lab07.html) | n/a
 > Feb 21 | [Lab 8: Gone loopy](lab08.html) | [CS101\_Lab08.zip](CS101_Lab08.zip)
 > Feb 23 | Loops activity | TBD
-> Mar 7 | [Lab 9: Fancy Rectangle](lab09.html) | [CS101\_Lab09.zip](CS101_Lab09.zip)
-> Mar 9 | [Lab 10: Combining loops and decisions](lab10.html) | n/a
-> Mar 16 | [Lab 11: Array Exercises](lab11.html) | n/a
-> Mar 21 | [Lab 12: Kitten Pictures](lab12.html) | [CS101\_Lab12.zip](CS101_Lab12.zip)
-> Mar 23 | [Lab 13: Right Triangle](lab13.html) | [CS101\_Lab13.zip](CS101_Lab13.zip)
-> Mar 28 | [Lab 14: Simple Stats](lab14.html) | [CS101\_Lab14.zip](CS101_Lab14.zip)
-> Mar 30 | Lab 15: TBD (Functions) | n/a
-> Apr 4 | [Lab 16: Grass Fire](lab16.html) | [CS101\_Lab16.zip](CS101_Lab16.zip)
-> Apr 4 | [Lab 17: Fancy Output](lab17.html) | [CS101\_Lab17.zip](CS101_Lab17.zip)
-> Apr 11 | [Lab 18: Boing!](lab18.html) | [CS101\_Lab18.zip](CS101_Lab18.zip)
-> Apr 18 | [Lab 20: Boing! revisited](lab20.html) | [CS101\_Lab20.zip](CS101_Lab20.zip)
-> Apr 20 | [Lab 21: Complex numbers](lab21.html) | [CS101\_Lab21.zip](CS101_Lab21.zip)
-> Apr 25 | [Lab 22: Boing! with pointers](lab22.html) | [CS101\_Lab22.zip](CS101_Lab22.zip)
-> Apr 27 | [Lab 23: Mini Golf](lab23.html) | [CS101\_Lab23.zip](CS101_Lab23.zip)
-> May 2 | [Lab 24: Boing! particle simulation](lab24.html) | [CS101\_Lab24.zip](CS101_Lab24.zip)
+> Mar 7 | [Lab 10: Fancy Rectangle](lab10.html) | [CS101\_Lab10.zip](CS101_Lab10.zip)
+> Mar 9 | [Lab 11: Combining loops and decisions](lab11.html) | n/a
+> Mar 16 | [Lab 12: Array Exercises](lab12.html) | n/a
+> Mar 21 | [Lab 13: Kitten Pictures](lab13.html) | [CS101\_Lab13.zip](CS101_Lab13.zip)
+> Mar 23 | [Lab 14: Right Triangle](lab14.html) | [CS101\_Lab14.zip](CS101_Lab14.zip)
+> Mar 28 | [Lab 15: Simple Stats](lab15.html) | [CS101\_Lab15.zip](CS101_Lab15.zip)
+> Mar 30 | Lab 16: TBD (Functions) | n/a
+> Apr 4 | [Lab 17: Grass Fire](lab17.html) | [CS101\_Lab17.zip](CS101_Lab17.zip)
+> Apr 4 | [Lab 18: Fancy Output](lab18.html) | [CS101\_Lab18.zip](CS101_Lab18.zip)
+> Apr 11 | [Lab 19: Boing!](lab19.html) | [CS101\_Lab19.zip](CS101_Lab19.zip)
+> Apr 18 | [Lab 21: Boing! revisited](lab21.html) | [CS101\_Lab21.zip](CS101_Lab21.zip)
+> Apr 20 | [Lab 22: Complex numbers](lab22.html) | [CS101\_Lab22.zip](CS101_Lab22.zip)
+> Apr 25 | [Lab 23: Boing! with pointers](lab23.html) | [CS101\_Lab23.zip](CS101_Lab23.zip)
+> Apr 27 | [Lab 24: Mini Golf](lab24.html) | [CS101\_Lab24.zip](CS101_Lab24.zip)
+> May 2 | [Lab 25: Boing! particle simulation](lab25.html) | [CS101\_Lab25.zip](CS101_Lab25.zip)
 
 <!--
 > &mdash; | [Lab 5: Conditions reading/modifying exercise](lab05.html) | [CS101\_Lab05.zip](CS101_Lab05.zip)
