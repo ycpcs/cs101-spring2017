@@ -92,7 +92,7 @@ Next, implement the **print\_cells** function so that the program can print out 
 
 Finally, implement the simulation loop so that it calls the **update\_cells** and **print\_cells** functions. It will be helpful to call **copy\_cells** from the **update\_cells** function, in order to copy the update cell value back into the main cell data array.
 
-> <div class="callout"> **Important**: make sure that your **update\_cells** function does not make any out of bounds array accesses. Specifically, updating the first and last cell will need to be handled specially because they have no left and right neighbor, respectively. These nonexistent neighbors should be considered to be grass (not on fire). </div>
+> <div class="callout"> <b>Important</b>: make sure that your <b>update_cells</b> function does not make any out of bounds array accesses. Specifically, updating the first and last cell will need to be handled specially because they have no left and right neighbor, respectively. These nonexistent neighbors should be considered to be grass (not on fire). </div>
 
 Submitting
 ----------
