@@ -20,6 +20,15 @@ Using **Notepad++**, open the file
 
 > **H:\\CS101\\CS101\_Lab09\\BarGraph.cpp**
 
+# Design notes
+
+When you create your [design artifact](../design-template.pdf) for this lab, you should create two control flow sketches:
+
+* One for allowing the user to specify a bar length and drawing a single bar
+* One for repeatedly drawing bars and asking the user whether or not she wants to continue
+
+Each control flow sketch should be in pseudo code: see [Lab 5](lab05.html) for a discussion of what pseudo code should look like.
+
 # Your task
 
 Write a program that prompts the user to draw one or more bars of a bar graph.
