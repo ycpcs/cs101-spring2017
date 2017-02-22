@@ -23,8 +23,9 @@ Refer to the assignment description for specific information on how to submit mi
 
 If submission using **make** is not working, you can upload your submission directly using the Marmoset web interface.
 
-First, run the command
+First, run the commands
 
+    make clean
     make solution.zip
 
 from the lab or assignment directory.  This will create a zipfile with all of the files to be submitted.
