@@ -33,7 +33,7 @@ Each control flow sketch should be in pseudo code: see [Lab 5](lab05.html) for a
 
 Write a program that prompts the user to draw one or more bars of a bar graph.
 
-To draw each bar, the program should prompt the user for a length, and then draw a that many equals ("=") characters.  After drawing each bar, the program should ask whether or not to continue, and read a single input character.  If the user enters a 'Y' or 'y' character, then the program should continue.  If the user enters any other character, the program should finish.
+To draw each bar, the program should prompt the user for a length, and then draw a bar with that many equals ("=") characters.  After drawing each bar, the program should ask whether or not to continue, and read a single input character.  If the user enters a 'Y' or 'y' character, then the program should continue.  If the user enters any other character, the program should finish.
 
 Example of running the program (user input in **bold**):
 
