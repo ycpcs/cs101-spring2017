@@ -70,18 +70,26 @@ What size barn door? <b>11</b>
 Another example run of the program (user input in **bold**):
 
 <pre>
-What size barn door? 4
+What size barn door? <b>4</b>
 The size must be odd
 </pre>
 
 Another example run of the program (user input in **bold**):
 
 <pre>
-What size barn door? 1
+What size barn door? <b>1</b>
 The size must be at least 3
 </pre>
 
 The size the user enters is the number of lines and columns in the barn door to be printed.  The size must be odd and greater than or equal to 3.
+
+You can compile your program with the command
+
+    make
+
+You can run your program with the command
+
+    ./BarnDoor.exe
 
 ## Hints
 
