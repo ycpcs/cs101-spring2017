@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Mar 6** &mdash; **Exam 2** will take place in class on **Tuesday, Mar 14th**.  The format will be the same as Exam 1.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Feb 7** &mdash; Solutions to the first practice exam are available on the [Practice Exams](practice/index.html) page.
 * **Jan 31** &mdash; **Exam 1** will take place in class on **Tuesday, Feb 14th**.  It is closed book and closed notes: however, you will have the [reference card](refcard.pdf) as a reference.  There will be a written part and a programming part.  The [Practice Exams](practice/index.html) page has a practice exam.
 * **Jan 31** &mdash; [Assignment 2](assign/assign02.html) has been posted.  There are two milestones; see the assignment description for deliverables and due dates.
