@@ -14,3 +14,5 @@ Feb 9 | [ticket2.cpp](ticket2.cpp) | Ticket discount using if/else if
 Feb 16 | [factors.cpp](factors.cpp) | Find factors of an integer
 Feb 21 | [combo.cpp](combo.cpp) | Try to guess combination before bomb explodes
 Feb 21 | [guess.cpp](guess.cpp) | Guessing game using while loop
+Mar 7 | [rectangle.cpp](rectangle.cpp) | Print rectangle using text characters
+Mar 7 | [box.cpp](box.cpp) | Print outlined box using text characters
