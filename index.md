@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Mar 9** &mdash; Solutions to Spring 2016 Exam 2 are posted on the [Practice Exams](practice/index.html) page.  Also, the Spring 2015 Exam 2 has been posted as an additional practice exam.
 * **Mar 6** &mdash; **Exam 2** will take place in class on **Tuesday, Mar 14th**.  The format will be the same as Exam 1.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Feb 7** &mdash; Solutions to the first practice exam are available on the [Practice Exams](practice/index.html) page.
 * **Jan 31** &mdash; **Exam 1** will take place in class on **Tuesday, Feb 14th**.  It is closed book and closed notes: however, you will have the [reference card](refcard.pdf) as a reference.  There will be a written part and a programming part.  The [Practice Exams](practice/index.html) page has a practice exam.
