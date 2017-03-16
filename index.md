@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Mar 16** &mdash; The [Schedule](schedule.html) and [Labs](labs/index.html) pages have been updated to account for the college being closed on the 14th.
 * **Mar 13** &mdash; Due to the snowstorm expected for tomorrow, Exam 2 will take place on **Thursday, Mar 16th**.  We will use Tuesday, Mar 14th as a review day if the college is open.
 * **Mar 9** &mdash; Solutions to Spring 2016 Exam 2 are posted on the [Practice Exams](practice/index.html) page.  Also, the Spring 2015 Exam 2 has been posted as an additional practice exam.
 * **Mar 6** &mdash; **Exam 2** will take place in class on **Tuesday, Mar 14th**.  The format will be the same as Exam 1.  A practice exam is available on the [Practice Exams](practice/index.html) page.
