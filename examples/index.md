@@ -19,3 +19,4 @@ Mar 7 | [box.cpp](box.cpp) | Print outlined box using text characters
 Mar 7 | [box-2.cpp](box-2.cpp) | Same as above (box.cpp), alternate logic, with comments
 Mar 9 | [prime-or-factors.cpp](prime-or-factors.cpp) | Factors for a given number, with comments
 Mar 9 | [checkerboard.cpp](checkerboard.cpp) | Checkerboard of 'X's and 'O's, with comments
+Mar 21 | [temperature.cpp](temperature.cpp) | Read temperatures, compute average/min/max
