@@ -38,10 +38,6 @@ To run a program, use one of the following commands (as appropriate):
 Your Task
 =========
 
-**Note**: This is a fairly large lab. Even if you don't finish everything in class, make sure to submit what you have. (You can always finish it outside of class and resubmit the finished version.)
-
-**Also note**: This lab is a lot of fun.
-
 In this lab, you will write programs to transform a photo of an adorable kitten (source: [placekitten.com](http://placekitten.com/800/600)):
 
 > ![image](images/lab13/kitten.bmp)
@@ -115,9 +111,9 @@ View the resulting image by opening **fade.bmp** in your web browser.
 RGB
 ---
 
-In the program **RGB.cpp**, create a large image with 4 copies of the original image. The top left, top right, and bottom left copies should preserve only the red, green, and blue color component values, leaving the other component values as 0. The bottom right copy should be identical to the original image:
+In the program **RGB.cpp**, create a large image with 4 copies of the original image. The top left, top right, and bottom left copies should preserve only the red, green, and blue color component values, leaving the other component values as 0. The bottom right copy should be identical to the original image.  So, it should look like the following image (click for full size):
 
-> ![image](images/lab13/rgb.bmp)
+> <a href="images/lab13/rgb.bmp"><img alt="image" src="images/lab13/rgb.bmp" style="width: 35em;"></a>
 
 Note that this program uses larger arrays called **red\_out**, **green\_out**, and **blue\_out** to store the output image, with twice the number of rows and columns as the original arrays. So, in this program, you will set values in the the output arrays rather than modifying the value in the original input arrays.
 
