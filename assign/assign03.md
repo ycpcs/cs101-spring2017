@@ -3,11 +3,9 @@ layout: default
 title: "Assignment 3: On Target"
 ---
 
-*Preliminary assignment description, not official yet*
+Design due: **in class** on **Tuesday, March 28th**
 
-Design due: TBD
-
-Code due: TBD
+Code due: **Tuesday, April 4th** by 11:59 PM
 
 Getting Started
 ===============
@@ -45,7 +43,10 @@ To run the program, type the command
 
 ## Design
 
-Yeah
+Your design artifact should contain control flow sketches for:
+
+* generating the scores and storing them in an array
+* computing a histogram of the scores
 
 ## Program
 
@@ -133,7 +134,24 @@ See the following web page for information about computing standard deviation:
 
 # Grading
 
-Yeah
+Your grade (out of 100 points) is determined as follows:
+
+* Design artifact: 10 points
+* Simulating arrows being fired at the target: 10 points
+* Scoring each arrow: 10 points
+* Storing scores in an array: 15 points
+* Computing histogram of scores: 15 points
+* Printing histogram of scores
+    * Count for each bucket: 10 points
+    * Bar for each bucket: 5 points
+* Computing median: 5 points
+* Computing mean: 5 points
+* Computing standard deviation: 5 points
+* Good coding style: 10 points
+
+<div class="callout">
+To earn full credit for coding style, make sure your program uses <b>correct indentation</b>, uses <b>meaningful variable names</b>, and <b>has comments</b> explaining the purpose of each section of code.
+</div>
 
 # Submitting
 
