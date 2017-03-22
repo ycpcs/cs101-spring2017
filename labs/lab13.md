@@ -38,7 +38,7 @@ To run a program, use one of the following commands (as appropriate):
 Your Task
 =========
 
-In this lab, you will write programs to transform a photo of an adorable kitten (source: [placekitten.com](http://placekitten.com/800/600)):
+In this lab, you will write programs to transform a photo of an adorable kitten (source: [placekitten.com](http://placekitten.com/640/480)):
 
 > ![image](images/lab13/kitten.bmp)
 
