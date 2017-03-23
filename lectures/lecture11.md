@@ -53,25 +53,25 @@ int main(void)
 {
     double quiz[NUM_STUDENTS][NUM_QUIZZES];
 
-    int j, i;
+    int i, j;
 
     // Allow the user to enter the quiz grade data
-    for (j = 0; j < NUM_STUDENTS; j++) {
-        printf("Enter grades for student %i:\n", j + 1);
+    for (i = 0; i < NUM_STUDENTS; i++) {
+        printf("Enter grades for student %i:\n", i + 1);
 
-        for (i = 0; i < NUM_QUIZZES; i++) {
-            printf("Quiz %i grade: ", i + 1);
-            scanf("%lf", &quiz[j][i]);
+        for (j = 0; j < NUM_QUIZZES; j++) {
+            printf("Quiz %i grade: ", j + 1);
+            scanf("%lf", &quiz[i][j]);
         }
     }
 
     // Now compute each student's quiz average
-    for (j = 0; j < NUM_STUDENTS; j++) {
+    for (i = 0; i < NUM_STUDENTS; i++) {
         double quiz_average;
 
         // Code to compute the average would go here...
 
-        printf("Student %i's average is %.2lf\n", j + 1, quiz_average);
+        printf("Student %i's average is %.2lf\n", i + 1, quiz_average);
     }
 
     return 0;
