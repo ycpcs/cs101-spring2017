@@ -23,11 +23,13 @@ In this example, the array quiz has two dimensions. Because **NUM\_STUDENTS** is
 
 Conceptually, the array is arranged like this:
 
-> <table>
-> <tr><td>quiz[0][0]</td><td>quiz[0][1]</td>
-> <tr><td>quiz[1][0]</td><td>quiz[1][1]</td>
-> <tr><td>quiz[2][0]</td><td>quiz[2][1]</td>
-> </table>
+<blockquote>
+<table>
+<tr><td>quiz[0][0]</td><td>quiz[0][1]</td></tr>
+<tr><td>quiz[1][0]</td><td>quiz[1][1]</td></tr>
+<tr><td>quiz[2][0]</td><td>quiz[2][1]</td></tr>
+</table>
+</blockquote>
 
 Because there are 3 rows and 2 columns, the array contains 6 elements.
 
