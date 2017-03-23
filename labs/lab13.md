@@ -92,7 +92,7 @@ Here's how to do this. For a pixel at column *i* and row *j*, compute *hdist* an
 
 > *hdist* = (*i*+1) / **WIDTH**
 >
-> *vist* = (*j*+1) / **HEIGHT**
+> *vdist* = (*j*+1) / **HEIGHT**
 
 *hdist* and *vdist* represent the relative distance of the pixel from the left edge and top edge of the image, respectively, in the range 0..1. (Be careful to use floating point operations rather than integer operations to compute these values.)
 
