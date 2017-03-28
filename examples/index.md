@@ -21,3 +21,4 @@ Mar 9 | [prime-or-factors.cpp](prime-or-factors.cpp) | Factors for a given numbe
 Mar 9 | [checkerboard.cpp](checkerboard.cpp) | Checkerboard of 'X's and 'O's, with comments
 Mar 21 | [random-array-stats.cpp](random-array-stats.cpp) | populate array with random integers, then compute array stats
 Mar 21 | [temperature.cpp](temperature.cpp) | Read temperatures, compute average/min/max
+Mar 28 | [functions.cpp](functions.cpp) | Calling a function to draw an outlined box
