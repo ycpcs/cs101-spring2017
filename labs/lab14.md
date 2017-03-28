@@ -72,7 +72,7 @@ Enter the height for your triangle: <b>6</b>
 
 **Part 3**
 
-For Part 3, you will again need to modify the **print\_line** function. This time, your goal is to modify the left and right sides of the triangle so that it is printed using the '/' and '|' characters as shown below. As with Part 2, you need only change the **print\_line** function. Do not change the **main** function.
+For Part 3, you will again need to modify the **print\_line** function. This time, your goal is to modify the left and right sides of the triangle so that it is printed using the '/' and '\|' characters as shown below. As with Part 2, you need only change the **print\_line** function. Do not change the **main** function.
 
 Example run (user input in **bold**):
 
