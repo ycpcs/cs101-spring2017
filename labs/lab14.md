@@ -34,9 +34,9 @@ The file **RightTriangle.cpp** file currently has a **main** function as well as
 
 Write a program that prompts a user to input the height of a right triangle and then draws the triangle in the terminal window. Inside the **main** function, write the code necessary to draw the right triangle like the one shown in the example below. You **MUST** call the **print\_spaces** and **print\_lines** functions from the **main** function to print the space and asterisk characters to the terminal window. **In part 1, DO NOT modify the print\_spaces or print\_lines function.**
 
-<pre>
 Example run (user input in **bold**):
 
+<pre>
 Enter the height for your triangle: <b>6</b>
      *
     **
