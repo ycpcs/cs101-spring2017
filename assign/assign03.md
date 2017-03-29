@@ -7,6 +7,8 @@ Design due: **in class** on **Tuesday, March 28th**
 
 Code due: **Tuesday, April 4th** by 11:59 PM
 
+*Update 3/29*: see "Getting Started" section for an update concerning the `submitToMarmoset.pl` script needed to submit to Marmoset
+
 Getting Started
 ===============
 
@@ -38,6 +40,10 @@ When you are ready to compile the program, in the Cygwin bash shell (or Linux te
 To run the program, type the command
 
     ./OnTarget.exe
+
+**Important note**: The original version of the zip file did not include the `submitToMarmoset.pl` script needed to allow `make submit` to work.  To fix this problem, run the following command in your `CS101_Assign03` directory:
+
+    curl -O http://faculty.ycp.edu/~dhovemey/submitToMarmoset.pl
 
 # Your tasks
 

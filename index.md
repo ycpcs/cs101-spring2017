@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Mar 29** &mdash; The description of [Assignment 3](assign/assign03.html) has been updated to describe how to fix a problem that prevents `make submit` from working.
 * **Mar 21** &mdash; [Assignment 3](assign/assign03.html) has been posted.  The design is due at the beginning of class on **Tuesday, Mar 28th**, and the code is due on **Tuesday, Apr 4th** by 11:59 PM.
 * **Mar 16** &mdash; The [Schedule](schedule.html) and [Labs](labs/index.html) pages have been updated to account for the college being closed on the 14th.
 * **Mar 13** &mdash; Due to the snowstorm expected for tomorrow, Exam 2 will take place on **Thursday, Mar 16th**.  We will use Tuesday, Mar 14th as a review day if the college is open.
