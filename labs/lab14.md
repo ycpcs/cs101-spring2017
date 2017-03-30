@@ -111,7 +111,3 @@ When you are done, run the following command from the Cygwin bash shell:
     make submit
 
 You will be prompted for your Marmoset username and password, which you should have received by email. Note that your password will not appear on the screen.
-
-**Important**:
-
-> You **must** submit your work before leaving class. If you do not submit work, you will not receive any credit for the lab.
