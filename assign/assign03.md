@@ -9,6 +9,8 @@ Code due: **Tuesday, April 4th** by 11:59 PM
 
 *Update 3/29*: see "Getting Started" section for an update concerning the `submitToMarmoset.pl` script needed to submit to Marmoset
 
+*Update 3/30*: corrections to scoring
+
 Getting Started
 ===============
 
@@ -61,9 +63,9 @@ Your task is to write a program that simulates an archer firing arrows at a targ
 The target is a circle whose diameter is 1,900 units.  The center of the target as at the point (0,0).  When an arrow hits the target, its score is calculated based on how far it was from the center of the target:
 
 * If it was within 50 units of the center, it is a bullseye, and earns 1,000 points
-* If it was between 51 and 150 units from the center, it earns 900 points
-* If it was between 251 and 350 units from the center, it earns 800 points
-* Etc.
+* If it was between 50 and 150 units from the center, it earns 900 points
+* If it was between 150 and 250 units from the center, it earns 800 points
+* etc.
 
 Any arrow more than 950 units from the center misses the target entirely, and earns 0 points.
 
@@ -87,39 +89,39 @@ The second part is computed statistics about the scores, specifically the *mean*
 Example run:
 
 ```
-1000: [  33] ======
- 900: [  75] ===============
- 800: [  97] ===================
- 700: [ 137] ===========================
- 600: [ 119] =======================
- 500: [ 125] =========================
- 400: [ 118] =======================
- 300: [  84] ================
- 200: [  82] ================
- 100: [  50] ==========
-   0: [  80] ================
-Median score is 500.00
-Mean score is 501.70
-Standard deviation is 274.89
+1000: [  36] =======
+ 900: [ 165] =================================
+ 800: [ 228] =============================================
+ 700: [ 223] ============================================
+ 600: [ 184] ====================================
+ 500: [ 110] ======================
+ 400: [  36] =======
+ 300: [  16] ===
+ 200: [   2] 
+ 100: [   0] 
+   0: [   0] 
+Median score is 700.00
+Mean score is 708.00
+Standard deviation is 156.83
 ```
 
 Another example run:
 
 ```
-1000: [  22] ====
- 900: [  59] ===========
- 800: [ 108] =====================
- 700: [ 138] ===========================
- 600: [ 120] ========================
- 500: [ 124] ========================
- 400: [ 125] =========================
- 300: [  93] ==================
- 200: [  86] =================
- 100: [  45] =========
-   0: [  80] ================
-Median score is 500.00
-Mean score is 491.70
-Standard deviation is 266.87
+1000: [  25] =====
+ 900: [ 167] =================================
+ 800: [ 278] =======================================================
+ 700: [ 242] ================================================
+ 600: [ 157] ===============================
+ 500: [  94] ==================
+ 400: [  28] =====
+ 300: [   6] =
+ 200: [   3] 
+ 100: [   0] 
+   0: [   0] 
+Median score is 700.00
+Mean score is 721.90
+Standard deviation is 144.19
 ```
 
 # Hints
