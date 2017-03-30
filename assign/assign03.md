@@ -60,9 +60,9 @@ Your task is to write a program that simulates an archer firing arrows at a targ
 
 The target is a circle whose diameter is 1,900 units.  The center of the target as at the point (0,0).  When an arrow hits the target, its score is calculated based on how far it was from the center of the target:
 
-* If it was less than 50 units from the center, it is a bullseye, and earns 1,000 points
-* If it was between 50 and 149 units from the center, it earns 900 points
-* If it was between 250 and 349 units from the center, it earns 800 points
+* If it was within 50 units of the center, it is a bullseye, and earns 1,000 points
+* If it was between 51 and 150 units from the center, it earns 900 points
+* If it was between 251 and 350 units from the center, it earns 800 points
 * Etc.
 
 Any arrow more than 950 units from the center misses the target entirely, and earns 0 points.
