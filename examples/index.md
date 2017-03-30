@@ -22,3 +22,4 @@ Mar 9 | [checkerboard.cpp](checkerboard.cpp) | Checkerboard of 'X's and 'O's, wi
 Mar 21 | [random-array-stats.cpp](random-array-stats.cpp) | populate array with random integers, then compute array stats
 Mar 21 | [temperature.cpp](temperature.cpp) | Read temperatures, compute average/min/max
 Mar 28 | [functions.cpp](functions.cpp) | Calling a function to draw an outlined box
+Mar 30 | [functions2.cpp](functions2.cpp) | Program defining and using a factorial function
