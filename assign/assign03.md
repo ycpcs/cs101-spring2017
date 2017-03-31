@@ -5,11 +5,13 @@ title: "Assignment 3: On Target"
 
 Design due: **in class** on **Tuesday, March 28th**
 
-Code due: **Tuesday, April 4th** by 11:59 PM
+Code due: **Thursday, April 6th** by 11:59 PM
 
 *Update 3/29*: see "Getting Started" section for an update concerning the `submitToMarmoset.pl` script needed to submit to Marmoset
 
 *Update 3/30*: corrections to scoring
+
+*Update 3/31*: due date changed
 
 Getting Started
 ===============
