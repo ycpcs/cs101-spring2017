@@ -1,58 +1,65 @@
 ---
 layout: default
-title: "Lab 15: Functions Reading/Modifying Exercise"
+title: "Lab 16: Function Design"
 ---
 
 # Getting started
 
 As always, you may refer to [Lab 1](lab01.html) if you need a reminder about how to start the **Cygwin Terminal** or **Notepad++**.
 
-Begin by downloading [CS101\_Lab15.zip](CS101_Lab15.zip). Save the zip file in the **H:\\CS101** directory.
+Begin by downloading [CS101\_Lab16.zip](CS101_Lab16.zip). Save the zip file in the **H:\\CS101** directory.
 
 Start the **Cygwin Terminal** and run the following commands:
 
     cd h:
     cd CS101
-    unzip CS101_Lab15.zip
-    cd CS101_Lab15
+    unzip CS101_Lab16.zip
+    cd CS101_Lab16
 
-Start the **Notepad++** text editor. Use it to open the files
+Start the **Notepad++** text editor. Use it to open the file
 
-> **H:\\CS101\\CS101\_Lab15\\Part1.cpp**
+> **H:\\CS101\\CS101\_Lab16\\FunctionDesign.cpp**
 
-> **H:\\CS101\\CS101\_Lab15\\Part2.cpp**
+You can compile the program using the `make` command, and run the program using the command
+
+    ./FunctionDesign.exe
 
 # Your Task
 
-Your task is broken up into two parts.
+Your task is to design and implement the following functions:
 
-Some of the parts ask you to make predictions and write them down.  You should save your predictions in the file **experiment.txt**.  You can use Notepad++ (or any text editor) to open this file.
+> Function name | Description
+> ------------- | -----------
+> `roundToNearest100` | given an integer value, returns the same integer rounded to the nearest multiple of 100
+> `isOdd` | given an integer value, returns `true` if the integer is odd, and `false` if it is even
+> `poly` | given a number *x* (which is not necessarily an integer), returns the value of 3<i>x</i><sup>2</sup> + 6<i>x</i> + 12
+> `celsiusToFahrenheit` | given a temperature *t* in Celsius (not necessarily an integer), return the equivalent temperature in Fahrenheit, which is (*t* &times; 9/5) + 32
 
-## Part 1
+## Part 1: Design
 
-Consider the program in **Part1.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
+For each function, create a [design artifact](../design-template.pdf), including input (parameters) and output (return value).  Discuss your design with your neighbors.  Did you agree on what parameters and parameter data types are needed?  Did you agree on the return type?
 
-Compile the program by running the command
+## Part 2: Implementation and Testing
 
-    make Part1.exe
+For each function, add a prototype and function definition to the program.
 
-Then execute the program by running the command
+To test a function, add at least four *assertions* to the `main` function.  An assertion tests a function by calling the function with hard-coded values, and verifies that the correct result is returned.
 
-    ./Part1.exe
+An example function called `addInts` is provided, along with several test assertions.
 
-Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
+When you run the program, it will print
 
-Finally, modify the program so that the output [looks like this](lab15Part1Output.html) (click link to see).  You should only need to modify the **choose** function.
+    All tests passed!
 
-## Part 2
+if all of the tests succeed.  Otherwise, you will see a message about a failed assertion.  This means that either the function returned the wrong value, or the test is incorrect.
 
-Consider the program in **Part2.cpp**.  What output will it print when it is executed?  Make a prediction and write it down in **experiment.txt**.
+# Hints
 
-Compile the program (`make Part2.exe`) and execute the program (`./Part2.exe`).
+The `bool` type is appropriate for representing the values `true` and `false`.
 
-Did the output match your prediction?  Record your result in **experiment.txt**.  If the output did not match your prediction, explain why.
+A good way to specify an expected value for a function that does a numeric computation is to specify the expected value as the same computation on whatever hard-coded value or values were passed to the function. For example, to test the `celsiusToFahrenheit` function, you might specify the assertion as
 
-Finally, modify the program so that the output [looks like this](lab15Part2Output.html) (click link to see).  You should **not** need to modify the **choose** function.
+    assert(celsiusToFahrenheit(49.5) == ((49.5 * 9.0) / 5.0) + 32.0);
 
 # Submitting
 
@@ -61,7 +68,3 @@ When you are done, run the following command from the Cygwin bash shell:
     make submit
 
 You will be prompted for your Marmoset username and password, which you should have received by email. Note that your password will not appear on the screen.
-
-**Important**:
-
-> You **must** submit your work before leaving class. If you do not submit work, you will not receive any credit for the lab.
