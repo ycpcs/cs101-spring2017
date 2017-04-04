@@ -16,3 +16,5 @@ title: "Practice Exams"
 [Exam 2, Spring 2015](cs101-spring2015-exam02.pdf), [Programming zipfile](CS101_Exam2_S15.zip)
 
 > As you prepare for Exam 2 you can ignore questions 1, 8, 10, and 12, since they involve arrays.
+
+[Exam 3, Spring 2016](cs101-spring2016-exam03.pdf), [Programming zipfile](CS101_Exam3.zip)
