@@ -30,7 +30,7 @@ Mar 2 | Winter vacation, no class
 Mar 7 | [Lecture 8: Nested loops, char data types](lectures/lecture08.html)<br>Chapter 4, *Nested for Loops* | Week8 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=494)\*, [multiplication table](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=533)\*, [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=495)![gold star](img/goldstar-tiny.png) | &mdash;
 Mar 9 | Combining loops and if/else | &mdash; | &mdash;
 Mar 14 | College closed due to snow
-Mar 14 | **Exam 2**
+Mar 16 | **Exam 2**
 Mar 21 | [Lecture 10: Arrays](lectures/lecture10.html)<br>Chapter 6 through *Initializing Arrays* | Week9 &rarr; [Array Scanner](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=496)\*, [Pair sums](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=497)\*, [Exceeded Amount](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=498), [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=499)![gold star](img/goldstar-tiny.png) | 6.4, 6.7
 Mar 23 | [Lecture 11: Multidimensional arrays](lectures/lecture11.html)<br>Chapter 6, *Multidimensional Arrays* | Week10 &rarr; [tic-tac-toe check](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=527)\* | &mdash;
 Mar 28 | [Lecture 12: Functions, top-down design](lectures/lecture12.html)<br>Chapter 7 through *Automatic Variables* | Week10 &rarr;  [PrintSum](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=500)\*, [Deep Thought](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=501)\*, [Find Primes](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=502)![gold star](img/goldstar-tiny.png) | &mdash;
