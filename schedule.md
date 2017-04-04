@@ -38,8 +38,8 @@ Mar 30 | [Lecture 13: Functions that return a value](lectures/lecture13.html)<br
 Apr 4 | <span class="activity">Functions design activity</span>
 Apr 6 | [Lecture 14: Arrays and functions](lectures/lecture14.html)<br>Chapter 7 through *Multidimensional Variable-Length Arrays and Functions* | Week11 &rarr; [ArraySum](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=503)\*, [IsAscending](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=505)\*, [countOdd](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=504)\* | &mdash;
 Apr 11 | **Exam 3**
-Apr 13 | [Lecture 15: Pointers, reference parameters](lectures/lecture15.html)<br>Chapter 10 through *Using Pointers in Expressions* | Week12 &rarr; [AddEmUp](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=508)\* | &mdash;
-Apr 18 | Spring vacation, no class
+Apr 13 | Spring vacation, no class
+Apr 18 | [Lecture 15: Pointers, reference parameters](lectures/lecture15.html)<br>Chapter 10 through *Using Pointers in Expressions* | Week12 &rarr; [AddEmUp](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=508)\* | &mdash;
 Apr 20 | [Lecture 16: Struct types](lectures/lecture16.html)<br>Chapter 8, through *Using Structures in Expressions* | Week13 &rarr; [area of Rectangle](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=509)\*, [quadrant](https://cs.ycp.edu/cloudcoder/#exercise?c=15,p=535)\* | &mdash;
 Apr 25 | [Lecture 17: Using structs with functions](lectures/lecture17.html)<br>Chapter 8, through *Initializing Structures* | &mdash; | &mdash;
 Apr 27 | [Lecture 18: Pointers to structures](lectures/lecture18.html)<br>Chapter 10, *Working with Pointers and Structures* | &mdash; | &mdash;
