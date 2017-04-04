@@ -30,7 +30,7 @@ Your task is to design and implement the following functions:
 
 > Function name | Description
 > ------------- | -----------
-> `roundToNearest100` | given an integer value, returns the same integer rounded to the nearest multiple of 100
+> `roundToNearest100` | given an integer value, returns the same integer rounded to the nearest multiple of 100: e.g., 137 would round down to 100, 153 would round up to 200, etc.
 > `isOdd` | given an integer value, returns `true` if the integer is odd, and `false` if it is even
 > `poly` | given a number *x* (which is not necessarily an integer), returns the value of 3<i>x</i><sup>2</sup> + 6<i>x</i> + 12
 > `celsiusToFahrenheit` | given a temperature *t* in Celsius (not necessarily an integer), return the equivalent temperature in Fahrenheit, which is (*t* &times; 9/5) + 32
