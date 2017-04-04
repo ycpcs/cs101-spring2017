@@ -21,8 +21,4 @@ title: "Practice Exams"
 
 > As you prepare for Exam 3, you can ignore questions 11, 12, and 15, since they involve passing arrays to functions.  Also, you can go back to questions 6, 11, 12, and 14 on the previous practice exam (Exam 2 from Spring 2016).
 
-> [Exam 3, written question solutions](cs101-spring2016-exam03-solution.pdf)
-
-<!--
-, [Exam 3, programming solutions](CS101_Exam3_Solution.zip)
--->
+> [Exam 3, written question solutions](cs101-spring2016-exam03-solution.pdf) , [Exam 3, programming solutions](CS101_Exam3_Solution.zip)
