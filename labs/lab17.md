@@ -46,7 +46,7 @@ Example run (user input in **bold**):
 <pre>
 How many cells? <b>20</b>
 <b>0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0</b>
-How many generations? 8
+How many generations? <b>8</b>
 ,,,,*,,,,,,,,,*,,,,,
 ,,,***,,,,,,,***,,,,
 ,,*****,,,,,*****,,,
