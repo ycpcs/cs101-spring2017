@@ -31,6 +31,10 @@ when you are ready to compile the program. To run the program, run the command
 
 The program will exit when you press a key.
 
+# Design artifact
+
+Do a design for the `boing_update` function.
+
 Your Task
 =========
 
