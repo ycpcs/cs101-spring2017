@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 17th** &mdash; [Assignment 4](assign/assign04.html) has been posted.  Design artifacts are due at the beginning of class on **Thurdsday, Apr 27th**, and the code is due on **Friday, May 5th** by 11:59 PM.
 * **Apr 4** &mdash; **Exam 3** will take place in class on **Tuesday, Apr 11th**.  The format is the same as Exams 1 and 2.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Mar 31** &mdash; The due date for [Assignment 3](assign/assign03.html) has been changed to **Thursday, Apr 6th** by 11:59 PM.
 * **Mar 30** &mdash; [Assignment 3](assign/assign03.html) has been updated to correct the description of scoring.
