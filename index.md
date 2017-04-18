@@ -26,7 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
-* **Apr 17th** &mdash; [Assignment 4](assign/assign04.html) has been posted.  The design artifacts for **snake\_append\_head()** and **snake\_append\_tail()** are due at the beginning of class on **Tuesday, Apr 25th**.  The design artifacts for **snake\_init()** and **scene\_update()** are due at the beginning of class on **Thursday, Apr 27th**, and the completed code is due on **Friday, May 5th** by 11:59 PM.
+* **Apr 17th** &mdash; [Assignment 4](assign/assign04.html) has been posted.  The design artifacts for **snake\_append\_head()** and **snake\_append\_tail()** are due at the beginning of class on **Tuesday, Apr 25th**.  The design artifacts for **snake\_init()** and **scene\_update()** are due at the beginning of class on **Thursday, Apr 27th**, and the completed code is due on **Friday, May 5th** by 11:59 PM. 
 
 * **Assignment 4 will require a good deal of understanding and effort - please be prepared to ask questions about the assignment during this Thursday's class (4-20-19).**
 
