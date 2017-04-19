@@ -32,10 +32,15 @@ Labs are worth 10% of your course grade.  To receive credit for a lab, you must:
 > Apr 18 | [Lab 18: Fancy Output](lab18.html) | [CS101\_Lab18.zip](CS101_Lab18.zip)
 > Apr 18 | [Lab 19: Boing!](lab19.html) | [CS101\_Lab19.zip](CS101_Lab19.zip)
 > Apr 20 | [Lab 21: Boing! revisited](lab21.html) | [CS101\_Lab21.zip](CS101_Lab21.zip)
+> Apr 25 | [Lab 23: Boing! with pointers](lab23.html) | [CS101\_Lab23.zip](CS101_Lab23.zip)
+> Apr 27 | [Lab 25: Boing! particle simulation](lab25.html) | [CS101\_Lab25.zip](CS101_Lab25.zip)
+
+<!--
 > Apr 25 | [Lab 22: Complex numbers](lab22.html) | [CS101\_Lab22.zip](CS101_Lab22.zip)
-> Apr 27 | [Lab 23: Boing! with pointers](lab23.html) | [CS101\_Lab23.zip](CS101_Lab23.zip)
-> May 2 | [Lab 24: Mini Golf](lab24.html) | [CS101\_Lab24.zip](CS101_Lab24.zip)
-> May 2 | [Lab 25: Boing! particle simulation](lab25.html) | [CS101\_Lab25.zip](CS101_Lab25.zip)
+-->
+<!--
+> Apr 25 2 | [Lab 24: Mini Golf](lab24.html) | [CS101\_Lab24.zip](CS101_Lab24.zip)
+-->
 
 <!--
 > &mdash; | [Lab 5: Conditions reading/modifying exercise](lab05.html) | [CS101\_Lab05.zip](CS101_Lab05.zip)
