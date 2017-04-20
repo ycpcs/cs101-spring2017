@@ -24,3 +24,4 @@ Mar 21 | [temperature.cpp](temperature.cpp) | Read temperatures, compute average
 Mar 28 | [functions.cpp](functions.cpp) | Calling a function to draw an outlined box
 Mar 30 | [functions2.cpp](functions2.cpp) | Program defining and using a factorial function
 Apr 18 | [pointer.cpp](pointer.cpp) | Compute power of 2 using function with a reference parameter
+Apr 20 | [complex.cpp](complex.cpp) | `struct Complex` data type, functions
