@@ -9,6 +9,8 @@ Design artifacts due on **Thursday, April 27th**
 
 Code due on **Friday, May 5th** by 11:59 PM
 
+*Update 4/24*: Added section on how to represent movement direction
+
 # Getting Started
 
 Start by downloading [CS101\_Assign04.zip](CS101_Assign04.zip), saving it in the CS101 directory within your home directory.
@@ -138,6 +140,23 @@ If you follow this approach, the tail segment is element 0 in the array of segme
 The `scene_update` function should move the snake each time it is called.  It should also check to see if the snake's head has gone out of bounds or has collided with the snake's body, and should check to see if the piece of fruit was eaten.
 
 Growing the snake (when a piece of fruit is eaten) is easy: just add a new head segment without removing the current tail segment.
+
+## Representing movement direction
+
+The head of the snake is always moving up, down, right, or left.
+
+If you use the suggested definition for the `struct Snake` data type, then you can use the `dir` field to keep track of which direction the snake is moving in.
+
+It will be helpful to define constants for the different possible directions: e.g.:
+
+```c
+#define UP    0
+#define DOWN  1
+#define RIGHT 2
+#define LEFT  3
+```
+
+Note that there is nothing special about the specific integer values used to represent directions.  The only requirement is that each direction can be distinguished from the other directions.
 
 ## Handling user input
 
