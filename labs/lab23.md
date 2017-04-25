@@ -55,9 +55,9 @@ You will need to do three things to complete the program:
 Hints
 -----
 
-Since these functions take a pointer to a **struct Scene**, you will need to take the address of the **myScene** variable in **main** in order to pass it to these functions.
+Since these functions take a pointer to a **struct Scene**, you will need to take the address of the **myScene** variable in **main** in order to pass it to these functions.  (Recall that `&` is the address-of operator.)
 
-Use the arrow (**-\>**) operator to access the fields of the **struct Scene** within the functions.  (Recall that `&` is the address-of operator.)
+Use the arrow (**-\>**) operator to access the fields of the **struct Scene** within the functions.
 
 Submitting
 ==========
