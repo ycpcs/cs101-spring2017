@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 25** &mdash; **Exam 4** will take place in class on **Thursday, May 4th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Apr 25** &mdash; Some additional hints have been added to the description of [Assignment 4](assign/assign04.html).
 * **Apr 24** &mdash; The description for [Assignment 4](assign/assign04.html) has been updated with a suggestion for how to represent movement direction.
 * **Apr 19** &mdash; The [Schedule](schedule.html) has been updated.  Lectures 17&ndash;20 have each been moved back one day earlier.
