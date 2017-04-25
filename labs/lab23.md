@@ -57,7 +57,7 @@ Hints
 
 Since these functions take a pointer to a **struct Scene**, you will need to take the address of the **myScene** variable in **main** in order to pass it to these functions.
 
-Use the arrow (**-\>**) operator to access the fields of the **struct Scene** within the functions.
+Use the arrow (**-\>**) operator to access the fields of the **struct Scene** within the functions.  (Recall that `&` is the address-of operator.)
 
 Submitting
 ==========
