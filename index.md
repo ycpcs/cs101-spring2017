@@ -26,9 +26,10 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 25** &mdash; Some additional hints have been added to the description of [Assignment 4](assign/assign04.html).
 * **Apr 24** &mdash; The description for [Assignment 4](assign/assign04.html) has been updated with a suggestion for how to represent movement direction.
-* **Apr 19th** &mdash; The [Schedule](schedule.html) has been updated.  Lectures 17&ndash;20 have each been moved back one day earlier.
-* **Apr 17th** &mdash; [Assignment 4](assign/assign04.html) has been posted.  The design artifacts for **snake\_append\_head()** and **snake\_remove\_tail()** are due at the beginning of class on **Tuesday, Apr 25th**.  The design artifacts for **snake\_init()** and **scene\_update()** are due at the beginning of class on **Thursday, Apr 27th**, and the completed code is due on **Friday, May 5th** by 11:59 PM. 
+* **Apr 19** &mdash; The [Schedule](schedule.html) has been updated.  Lectures 17&ndash;20 have each been moved back one day earlier.
+* **Apr 17** &mdash; [Assignment 4](assign/assign04.html) has been posted.  The design artifacts for **snake\_append\_head()** and **snake\_append\_tail()** are due at the beginning of class on **Tuesday, Apr 25th**.  The design artifacts for **snake\_init()** and **scene\_update()** are due at the beginning of class on **Thursday, Apr 27th**, and the completed code is due on **Friday, May 5th** by 11:59 PM. 
     * **Assignment 4 will require a good deal of understanding and effort - please be prepared to ask questions about the assignment during this Thursday's class (4-20-19).**
 * **Apr 4** &mdash; **Exam 3** will take place in class on **Tuesday, Apr 11th**.  The format is the same as Exams 1 and 2.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Mar 31** &mdash; The due date for [Assignment 3](assign/assign03.html) has been changed to **Thursday, Apr 6th** by 11:59 PM.

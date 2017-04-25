@@ -11,6 +11,8 @@ Code due on **Friday, May 5th** by 11:59 PM
 
 *Update 4/24*: Added section on how to represent movement direction
 
+*Update 4/25*: Added some suggestions for how to define `struct Scene` and `struct Point`
+
 # Getting Started
 
 Start by downloading [CS101\_Assign04.zip](CS101_Assign04.zip), saving it in the CS101 directory within your home directory.
@@ -85,9 +87,27 @@ The score and number of segments should be rendered in the last row of the termi
 
 The starting code has a `struct Scene` data type and an example `main` function.  You should add fields to `struct Scene` to represent the current game state.  **Important**: you may *not* modify the `main` function.  This means that you must define `scene_init`, `scene_render`, and `scene_update` functions that can work with the code in the `main` function.
 
+Here is a possible definition for the `struct Scene` data type:
+
+```c
+struct Scene {
+    struct Snake snake;
+};
+```
+
+Note that as you add additional features (fruit, score) you may need to add additional fields to this data type.
+
 ## Defining struct types and functions
 
 In addition to the `struct Scene` data type, you should define data types `struct Point` and `struct Snake`.
+
+The `struct Point` data type might be defined as follows:
+
+```c
+struct Point {
+    int x, y;
+};
+```
 
 You should define the following functions to operate on instances of `struct Point` and `struct Snake`:
 
