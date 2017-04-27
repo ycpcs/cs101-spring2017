@@ -98,6 +98,10 @@ If everything is working correctly, you should see an animation like the one sho
 Part 2
 ------
 
+<div class="callout">
+<b>Note</b>: this part of the lab is optional.
+</div>
+
 The goal of part 2 is to add a rectangular obstacle to the scene:
 
 > ![image](images/lab25/particlesWithObstacle.gif)
