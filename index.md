@@ -26,6 +26,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 28** &mdash; The description of [Assignment 4](assign/assign04.html) has been updated to indicate that extra credit features must be the result of individual effort (not collaboration.)
 * **Apr 27** &mdash; Solutions to practice exam 4 have been posted on the [Practice Exams](practice/index.html) page.
 * **Apr 25** &mdash; **Exam 4** will take place in class on **Thursday, May 4th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Apr 25** &mdash; Some additional hints have been added to the description of [Assignment 4](assign/assign04.html).

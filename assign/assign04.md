@@ -13,6 +13,8 @@ Code due on **Friday, May 5th** by 11:59 PM
 
 *Update 4/25*: Added some suggestions for how to define `struct Scene` and `struct Point`
 
+*Update 4/28*: Indicate that extra credit features must be individual effort (not collaborative.)
+
 # Getting Started
 
 Start by downloading [CS101\_Assign04.zip](CS101_Assign04.zip), saving it in the CS101 directory within your home directory.
@@ -228,6 +230,8 @@ Extra credit features (complete these for up to 40 points of extra credit):
 * number of segments is displayed: 5
 
 **Important**: Include a comment at the top of your program explaining which extra credit features you implemented.
+
+**Important**: Any work on extra credit features must be done *individually*.
 
 # Submitting
 
